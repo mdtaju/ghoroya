@@ -22,7 +22,7 @@ const Slider = () => {
                               </div>
                               <div className='col-lg-6' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                               <div className={styles.home_slider_img}>
-                                    <Image className={styles.home_slider_res_img} src={ImgRes} alt='Restauran'/>
+                                    <Image priority={true} className={styles.home_slider_res_img} src={ImgRes} alt='Restauran'/>
                                     {/* <div className={styles.home_slider_location_container}>
                                           <GrLocation className={styles.home_slider_location_icon} />
                                           <div>
