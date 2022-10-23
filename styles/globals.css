@@ -60,4 +60,27 @@ h1 {
 p {
   color: #787878;
   font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+input {
+  border: none;
+  outline: none;
+  box-shadow: -1px 15px 26px -4px rgba(161, 151, 151, 0.15);
+  background-color: #fff;
+  padding: 12px 20px;
+  border-radius: 15px;
 }/*# sourceMappingURL=globals.css.map */

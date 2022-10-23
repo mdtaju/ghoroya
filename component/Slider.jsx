@@ -10,7 +10,7 @@ const Slider = () => {
                   <Nav />
                   <div className="container">
                         <div className='row'>
-                              <div className='col-lg-6 aos-init aos-animate' data-aos="fade-up" data-aos-delay="2000" data-aos-duration="300">
+                              <div className='col-lg-6' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                                     <div className={styles.home_slider_restaurant}>
                                           <h1>The Best Restaurants In Your Home</h1>
                                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -20,7 +20,7 @@ const Slider = () => {
                                           </div>
                                     </div>
                               </div>
-                              <div className='col-lg-6'>
+                              <div className='col-lg-6' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                               <div className={styles.home_slider_img}>
                                     <Image className={styles.home_slider_res_img} src={ImgRes} alt='Restauran'/>
                                     {/* <div className={styles.home_slider_location_container}>

@@ -7,7 +7,9 @@ import '../styles/globals.css';
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
-    AOS.init();
+    AOS.init({
+      once: true
+    });
     
   }, []);
   return <Component {...pageProps} />

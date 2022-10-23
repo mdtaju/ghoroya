@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import Slider from './Slider';
+import Subscribe from './Subscribe';
 
 const Layout = ({children}) => {
       return (
@@ -9,6 +10,7 @@ const Layout = ({children}) => {
                   <>
                         {children}
                   </>
+                  <Subscribe />
                   <Footer />
             </>
       );
