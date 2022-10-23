@@ -1,0 +1,116 @@
+.footer_container {
+  margin: 100px 0px 0px 0px !important;
+  background-color: #363636;
+  color: #cfcfcf;
+}
+.footer_container li,
+.footer_container p {
+  font-size: 1.1rem !important;
+  color: #cfcfcf !important;
+}
+
+.footer_description h1 {
+  color: #fff;
+}
+
+.footer_menu h4,
+.footer_contract h4 {
+  color: #787878 !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .footer_menu h4,
+.footer_contract h4 {
+    margin-top: 30px;
+  }
+}
+.footer_menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+.footer_menu ul li {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #cfcfcf;
+  transition: all ease 0.5s;
+}
+.footer_menu ul li:hover {
+  transform: translateX(20px);
+  color: var(--primaryOrange) !important;
+}
+
+.footer_menu_icon {
+  padding-left: 20px;
+}
+
+.footer_location,
+.footer_mail,
+.footer_phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.footer_location p,
+.footer_mail p,
+.footer_phone p {
+  margin: 0;
+}
+
+.footer_mail,
+.footer_phone {
+  margin-top: 20px;
+}
+
+.footer_location {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.footer_social_icon {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px;
+  margin-top: 50px;
+}
+.footer_social_icon li {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid gray;
+  border-radius: 50%;
+  cursor: pointer;
+  background: transparent;
+  transition: all ease 0.3s;
+}
+.footer_social_icon li:hover {
+  border: none;
+  background: var(--primaryGreen);
+}
+
+.footer_bottom_part {
+  width: 100%;
+  margin-top: 100px;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+.footer_bottom_part p,
+.footer_bottom_part span {
+  color: gray !important;
+}
+.footer_bottom_part span {
+  cursor: pointer;
+}/*# sourceMappingURL=Footer.module.css.map */

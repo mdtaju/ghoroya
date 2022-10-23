@@ -1,0 +1,27 @@
+.CounterSection_title_area {
+  padding: 10px;
+}
+.CounterSection_title_area h3 {
+  font-weight: bold;
+}
+
+.CounterSection_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 50px;
+  margin-bottom: 10px;
+  box-shadow: 0px -1px 30px 4px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px -1px 30px 4px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px -1px 30px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.CounterSection_cart h3 {
+  font-size: 2.5rem;
+  color: var(--primaryOrange);
+  font-weight: bold;
+}
+.CounterSection_cart p {
+  font-weight: bold;
+}/*# sourceMappingURL=CounterSection.module.css.map */
