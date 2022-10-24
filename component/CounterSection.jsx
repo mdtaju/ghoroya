@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/CounterSection/CounterSection.module.css';
 const CounterSection = () => {
       return (
-            <div className=''>
+            <div className='gap'>
                   <div className="container">
                         <div className="row align-items-center">
                               <div className="col-lg-3 col-md-6 col-12" data-aos='flip-up' data-aos-delay="200" data-aos-duration="300">

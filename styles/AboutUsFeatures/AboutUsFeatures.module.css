@@ -1,0 +1,22 @@
+.aboutUsFeatures_card {
+  box-shadow: -1px 15px 26px -4px rgba(161, 151, 151, 0.15);
+  padding: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  margin-bottom: 20px;
+  transition: all ease-out 0.3s;
+}
+.aboutUsFeatures_card h4 {
+  font-weight: bold;
+  padding: 20px 0px;
+}
+.aboutUsFeatures_card:hover {
+  background-color: var(--primaryGreen);
+}
+.aboutUsFeatures_card:hover h4 {
+  color: #fff;
+}
+.aboutUsFeatures_card:hover p {
+  color: #fff;
+}/*# sourceMappingURL=AboutUsFeatures.module.css.map */
