@@ -11,6 +11,23 @@
   }
 }
 .home_slider_restaurant {
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    li {
+      font-weight: 500;
+      cursor: pointer;
+    }
+    li:first-child {
+      color: gray;
+    }
+    li:nth-last-child(2) {
+      color: var(--primaryOrange);
+    }
+  }
   h1 {
     width: 61%;
     font-weight: bold;
@@ -71,5 +88,22 @@
     display: flex;
     margin-right: 13px;
     padding: 0;
+  }
+}
+
+// slider contact
+.sliderContact_contact_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sliderContact_contact_card {
+  box-shadow: -1px 15px 26px -4px rgb(161 151 151 / 15%);
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+  &:hover {
+    background-color: var(--primaryGreen);
   }
 }

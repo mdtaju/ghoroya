@@ -16,7 +16,7 @@ const Slider = () => {
                                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                           <div>
                                                 {/* <SliderSelect /> */}
-                                                <button className='button button_2'>order now</button>
+                                                <button className='button button_2'>Download app</button>
                                           </div>
                                     </div>
                               </div>

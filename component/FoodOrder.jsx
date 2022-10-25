@@ -17,7 +17,7 @@ const FoodOrder = () => {
                                     <div>
                                           <h1>Food from your favorite restaurants to your table</h1>
                                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officiis tempore accusantium, exercitationem corrupti porro! Explicabo vel aliquid autem quo?</p>
-                                          <button className='button button_2'>order now</button>
+                                          <button className='button button_2'>Download app</button>
                                     </div>
                               </div>
                         </div>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-import ImgRes from '../public/Images/photo-9.jpg';
+import ImgRes from '../public/Images/contacts-1.png';
 import styles from '../styles/Slider/Slider.module.css';
 import Nav from './Nav';
 
@@ -19,13 +19,23 @@ const SliderAbout = () => {
                                                 <li>Home</li>
                                                 </Link>
                                                 <li><HiOutlineArrowNarrowRight /></li>
-                                                <Link href={'/about'}>
-                                                <li>About</li>
+                                                <Link href={'/contact'}>
+                                                <li>Contact</li>
                                                 </Link>
                                           </ul>
-                                          <h1>Nothing to worry about with Ghoroya</h1>
+                                          <h1>Contact us</h1>
                                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                                          
+                                          <div className={styles.sliderContact_contact_container}>
+                                                <div className={styles.sliderContact_contact_card}>
+                                                      <h6>Hello</h6>
+                                                </div>
+                                                <div className={styles.sliderContact_contact_card}>
+                                                      <h6>Hello</h6>
+                                                </div>
+                                                <div className={styles.sliderContact_contact_card}>
+                                                      <h6>Hello</h6>
+                                                </div>
+                                          </div>
                                     </div>
                               </div>
                               <div className='col-lg-6' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
