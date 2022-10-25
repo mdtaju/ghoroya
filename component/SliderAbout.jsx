@@ -4,12 +4,12 @@ import React from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import ImgRes from '../public/Images/photo-9.jpg';
 import styles from '../styles/Slider/Slider.module.css';
-import Nav from './Nav';
+import MainNav from './MainNav';
 
 const SliderAbout = () => {
       return (
             <section className={styles.slider_container}>
-                  <Nav />
+                  <MainNav />
                   <div className="container">
                         <div className='row align-items-center'>
                               <div className='col-lg-6' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">

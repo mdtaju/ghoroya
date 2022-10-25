@@ -38,3 +38,32 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+// mobile nav
+.mobileNav_container {
+  background-color: var(--primaryOrange);
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  box-shadow: -1px 15px 26px -4px rgb(161 151 151 / 15%);
+}
+.mobileNav_inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    border-radius: 10px;
+  }
+}
+.mobileNav_icon {
+  font-size: 2rem;
+  color: var(--primaryGreen);
+}
+.mobileNav_close_icon {
+  font-size: 2rem;
+  color: red;
+}
+.mobileNav_menu_item_icon {
+  font-size: 1.5rem;
+  line-height: 10px;
+  color: gray;
+}

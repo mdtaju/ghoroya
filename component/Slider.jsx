@@ -2,12 +2,12 @@ import Image from 'next/image';
 import React from 'react';
 import ImgRes from '../public/Images/home-page-slider.png';
 import styles from '../styles/Slider/Slider.module.css';
-import Nav from './Nav';
+import MainNav from './MainNav';
 
 const Slider = () => {
       return (
             <section className={styles.slider_container}>
-                  <Nav />
+                  <MainNav />
                   <div className="container">
                         <div className='row'>
                               <div className='col-lg-6' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
