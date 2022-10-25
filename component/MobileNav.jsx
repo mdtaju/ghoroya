@@ -1,3 +1,4 @@
+import { Switch } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
@@ -17,6 +18,8 @@ import { ImMenu } from 'react-icons/im';
 import { RiContactsFill } from 'react-icons/ri';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
 import styles from '../styles/NavBar/NavBar.module.css';
+
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 export default function MobileNav() {
       const location = useRouter();
@@ -93,6 +96,7 @@ export default function MobileNav() {
             </Link>
           <Divider />
       </List>
+      
     </Box>
   );
 
@@ -103,13 +107,18 @@ export default function MobileNav() {
                   <Image src={Logo} alt='logo' width={60} height={60} priority={true} />
                   {['left'].map((anchor) => (
                   <React.Fragment key={anchor}>
-                  <Button onClick={toggleDrawer(anchor, true)}><span className={styles.mobileNav_icon}><ImMenu /></span></Button>
+                  <span onClick={toggleDrawer(anchor, true)} className={styles.mobileNav_icon}><ImMenu /></span>
                   <Drawer
                         anchor={anchor}
                         open={state[anchor]}
                         onClose={toggleDrawer(anchor, false)}
                   >
                         {list(anchor)}
+                        <div style={{paddingLeft:'20px'}}>
+                              <span>English / বাংলা</span>
+                              <Switch {...label} defaultChecked />
+                        </div>
+                        <Divider />
                   </Drawer>
                   </React.Fragment>
                   ))}

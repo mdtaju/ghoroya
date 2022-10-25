@@ -6,12 +6,13 @@ import useWindowSize from './useWindowSize';
 
 const MainNav = () => {
       const windowWidth = useWindowSize();
+      console.log(windowWidth)
       return (
             <>
                   {
-                        windowWidth.width > 781 ?
-                        <Nav /> :
-                        <MobileNav />
+                        windowWidth.width < 782 ?
+                        <MobileNav /> :
+                        <Nav />
                   }
             </>
       );

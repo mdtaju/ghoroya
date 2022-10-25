@@ -12,10 +12,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  scroll-behavior: smooth;
+@media (max-width: 768px) {
+  body {
+    scrollbar-width: 0;
+  }
 }
-
 .button {
   padding: 0 18px;
   height: 43px;

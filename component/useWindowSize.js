@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function useWindowSize() {
   const [screenSize, getDimension] = useState({
-    width: 0,
+    width: 782,
     height: 0,
   });
 
@@ -14,7 +14,7 @@ export default function useWindowSize() {
   };
 
   useEffect(() => {
-    if (screenSize.width === 0) {
+    if (screenSize.width === 782) {
       getDimension({
         width: window.innerWidth,
         height: window.innerHeight,
