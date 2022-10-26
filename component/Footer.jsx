@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { AiOutlineTwitter } from 'react-icons/ai';
 import { BsArrowRight, BsFillTelephoneFill } from 'react-icons/bs';
 import { GrFacebookOption } from 'react-icons/gr';
 import { HiLocationMarker, HiMail } from 'react-icons/hi';
-import { RiInstagramLine } from 'react-icons/ri';
+import { IoLogoYoutube } from 'react-icons/io';
+// IoLogoGooglePlaystore
+import { RiInstagramLine, RiWhatsappFill } from 'react-icons/ri';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
+import GooglePlay from '../public/Images/google-play-store.png';
 import styles from '../styles/Footer/Footer.module.css';
 
 const Footer = () => {
@@ -16,9 +18,12 @@ const Footer = () => {
                         <div className="row">
                               <div className="col-lg-5 col-md-6 col-sm-12">
                                     <div className={styles.footer_description}>
-                                          <Image src={Logo} alt='logo' width={70} height={70} />
-                                          <h1>The Best Restaurants in Your Home</h1>
-                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, autem? Corrupti atque dignissimos incidunt quas voluptate labore quia tempore ipsum!</p>
+                                          <Image style={{borderRadius:'10px'}} src={Logo} alt='logo' width={70} height={70} />
+                                          <h1>Number One Platform for All Services</h1>
+                                          <p>All services are available through a single app. Ghoroya app enables small and medium entrepreneurs to sell and buy their products from home through a home app.</p>
+                                          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
+                                          <Image height={50} width={154} src={GooglePlay} alt='googleplaystore' />
+                                          </a> 
                                     </div>
                               </div>
                               <div className="col-lg-3 col-md-6 col-sm-12">
@@ -41,22 +46,43 @@ const Footer = () => {
                                     <div className={styles.footer_contract}>
                                           <h4>Contract</h4>
                                           <div className={styles.footer_location}>
-                                                <HiLocationMarker />
-                                                <p>Chattagram, Bangladesh</p>
+                                                <span><HiLocationMarker /></span>
+                                                <p>Opposite to Agrabad Fire Service Station, Sheikh Mujib Road, Dewanhat, Chittagong, Bangladesh, Chittagong, Bangladesh</p>
                                           </div>
                                           <div className={styles.footer_mail}>
                                                 <HiMail />
-                                                <p>ghoroya@info.com</p>
+                                                <p>info@ghoroya.com</p>
                                           </div>
                                           <div className={styles.footer_phone}>
                                                 <BsFillTelephoneFill />
-                                                <p>+00923984</p>
+                                                <p>+8801815-503745</p>
+                                          </div>
+                                          <div className={styles.footer_phone}>
+                                                <RiWhatsappFill />
+                                                <p>+8801707-201464</p>
                                           </div>
                                     </div>
                                     <ul className={styles.footer_social_icon}>
-                                          <li><GrFacebookOption /></li>
-                                          <li><RiInstagramLine /></li>
-                                          <li><AiOutlineTwitter /></li>
+                                          <a target="_blank" href="https://www.facebook.com/Ghoroya.comapps" rel="noopener noreferrer">
+                                                <li>
+                                                      <GrFacebookOption />
+                                                </li>
+                                          </a>
+                                          <a target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fghoroya.app%3Ffbclid%3DIwAR2K3384KUNiRoi8EnTQtijzFlMunBRcQD4slxEZ6sM8oX71P0VzGhSop8I&h=AT0uhUEBWEL1gYQ-oqXkh2UhfkRWOS1GxNh4esMJ5g-peVAApG1Y__gocQnEkC18332aCGKIlD3cgFqq9a2NYe-xxgTYDu7B1CSM8EvISr4Sxq5-eXjdHjzgra6LnBbnCAtZ" rel="noopener noreferrer">
+                                                <li>
+                                                      <RiInstagramLine />
+                                                </li>
+                                          </a>
+                                          <a target="_blank" href="https://www.youtube.com/channel/UC01sI-y0s3ZkQGX-NlYismw" rel="noopener noreferrer">
+                                                <li>
+                                                <IoLogoYoutube />
+                                                </li>
+                                          </a>
+                                          {/* <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
+                                                <li>
+                                                <IoLogoYoutube />
+                                                </li>
+                                          </a> */}
                                     </ul>
                               </div>
                         </div>

@@ -1,4 +1,3 @@
-import Switch from '@mui/material/Switch';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -35,10 +34,11 @@ const Nav = () => {
                   </ul>
                   <div className={styles.nav_cart_container}>
                   <div className='flex align-items-center'>
-                        <span>English / বাংলা</span>
-                  <Switch {...label} defaultChecked />
+                        
                   </div>
-                        <button className={`button button_2`}>download app</button>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
+                              <button className={`button button_2`}>download app</button>
+                        </a> 
                   </div>
             </nav>
       );

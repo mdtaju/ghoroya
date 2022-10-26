@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from './Footer';
-import Subscribe from './Subscribe';
 
 const Layout = ({children}) => {
       return (
@@ -8,7 +7,7 @@ const Layout = ({children}) => {
                   <>
                         {children}
                   </>
-                  <Subscribe />
+                  {/* <Subscribe /> */}
                   <Footer />
             </>
       );

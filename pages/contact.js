@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import CounterSection from '../component/CounterSection';
-import HowItWork from '../component/HowItWork';
 import Layout from '../component/Layout';
 import SliderContact from '../component/SliderContact';
 
@@ -15,8 +13,8 @@ export default function Contact() {
       </Head>
       <SliderContact />
       <Layout>
-        <HowItWork />
-        <CounterSection />
+        {/* <HowItWork /> */}
+        {/* <CounterSection /> */}
       </Layout>
     </>
   )

@@ -8,10 +8,10 @@ import MainNav from './MainNav';
 
 const SliderAbout = () => {
       return (
-            <section className={styles.slider_container}>
+            <section style={{marginBottom:'100px'}} className={styles.slider_container}>
                   <MainNav />
                   <div className="container">
-                        <div className='row align-items-center'>
+                        <div className='row align-items-center justify-content-between'>
                               <div className='col-lg-6' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                                     <div className={styles.home_slider_restaurant}>
                                           <ul>
@@ -23,12 +23,13 @@ const SliderAbout = () => {
                                                 <li>About</li>
                                                 </Link>
                                           </ul>
-                                          <h1>Nothing to worry about with Ghoroya</h1>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                          <h1>What is the function of Ghoroya?</h1>
+                                          <p>New and small entrepreneurs of Chittagong and all over Bangladesh offer home made food such as: breakfast, lunch, evening snacks, dinner, bread, cake, pitha, pudding, biryani and various homemade cooking spices etc. Besides, various types of hand-made goods such as woven products, cane products, all furniture made of bashen, nakshi kantha, boutique sewing products, handpaint, wallpaint etc. are sold directly to the consumer and work with the facility of easy and short delivery.
+So, Ghoroya.com is enabling small and medium entrepreneurs to sell and buy their manufactured products at home through home app.</p>
                                           
                                     </div>
                               </div>
-                              <div className='col-lg-6' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+                              <div className='col-lg-5 offset-lg-1' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                               <div className={styles.home_slider_img}>
                                     <Image priority={true} className={styles.home_slider_res_img} style={{borderRadius:'25px'}} src={ImgRes} alt='Restauran'/>
                                     {/* <div className={styles.home_slider_location_container}>

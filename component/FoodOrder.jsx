@@ -15,9 +15,11 @@ const FoodOrder = () => {
                               </div>
                               <div className="col-lg-6 offset-lg-1 col-sm-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                                     <div>
-                                          <h1>Food from your favorite restaurants to your table</h1>
-                                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officiis tempore accusantium, exercitationem corrupti porro! Explicabo vel aliquid autem quo?</p>
-                                          <button className='button button_2'>Download app</button>
+                                          <h1>Food Delivery in Less Than an Hour</h1>
+                                          <p>Get your meal delivered in an hour to your door with Ghoroya food!</p>
+                                          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
+                                                <button className={`button button_2`}>download app</button>
+                                          </a> 
                                     </div>
                               </div>
                         </div>
