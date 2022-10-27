@@ -2,12 +2,10 @@ import Image from 'next/image';
 import React from 'react';
 import ImgRes from '../public/Images/food-thre-burger.png';
 import styles from '../styles/Slider/Slider.module.css';
-import MainNav from './MainNav';
 
 const Slider = () => {
       return (
             <section style={{paddingBottom:'100px'}} className={styles.slider_container}>
-                  <MainNav />
                   <div className="container">
                         <div className='row align-items-center justify-content-between'>
                               <div className='col-lg-7' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">

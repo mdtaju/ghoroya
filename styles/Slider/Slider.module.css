@@ -3,11 +3,17 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 150px;
 }
 
 @media (max-width: 1400px) {
   .home_slider_restaurant h1 {
     width: 82%;
+  }
+}
+@media (max-width: 768px) {
+  .slider_container {
+    padding-top: 120px;
   }
 }
 .home_slider_restaurant ul {

@@ -5,12 +5,10 @@ import { HiLocationMarker, HiMail, HiOutlineArrowNarrowRight } from 'react-icons
 import { MdPermPhoneMsg } from 'react-icons/md';
 import ImgRes from '../public/Images/contacts-1.png';
 import styles from '../styles/Slider/Slider.module.css';
-import MainNav from './MainNav';
 
 const SliderAbout = () => {
       return (
             <section style={{marginBottom:'100px'}} className={styles.slider_container}>
-                  <MainNav />
                   <div className="container">
                         <div className='row align-items-center'>
                               <div className='col-lg-7' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">

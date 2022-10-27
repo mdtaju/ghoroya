@@ -1,9 +1,20 @@
+.navbar_main_container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  background-color: #fff;
+}
+
 .navbar {
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0px;
 }
 
 .navbar ul {
@@ -44,8 +55,14 @@
 .mobileNav_container {
   background-color: var(--primaryOrange);
   padding: 10px 0px;
-  margin-bottom: 20px;
   box-shadow: -1px 15px 26px -4px rgba(161, 151, 151, 0.15);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  z-index: 999;
 }
 
 .mobileNav_inner_container {
