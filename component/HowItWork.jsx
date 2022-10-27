@@ -6,7 +6,7 @@ import Illustration3 from '../public/Images/how-it-work/illustration-3.png';
 import styles from '../styles/HowItWorks/HowItWorks.module.css';
 const HowItWork = () => {
       return (
-            <div className='gap'>
+            <div className='gap no-top'>
                   <div className="container">
                         {/* <div className={`${styles.HowItWork_heading}`} data-aos="fade-up">
                               <h1>What is the function of ghoroya.com?</h1>

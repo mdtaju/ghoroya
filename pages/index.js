@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import CounterSection from '../component/CounterSection'
 import FoodOrder from '../component/FoodOrder'
+import HomeAppScreen from '../component/HomeAppScreen'
 import HowItWork from '../component/HowItWork'
 import Layout from '../component/Layout'
 import Slider from '../component/Slider'
@@ -16,6 +17,7 @@ export default function Home() {
       <Slider />
       <Layout>
         <HowItWork />
+        <HomeAppScreen />
         <FoodOrder />
         <CounterSection />
       </Layout>

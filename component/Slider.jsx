@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
-import ImgRes from '../public/Images/home-app-slider.jpeg';
+import ImgRes from '../public/Images/food-thre-burger.png';
 import styles from '../styles/Slider/Slider.module.css';
 import MainNav from './MainNav';
 
 const Slider = () => {
       return (
-            <section className={styles.slider_container}>
+            <section style={{paddingBottom:'100px'}} className={styles.slider_container}>
                   <MainNav />
                   <div className="container">
-                        <div className='row justify-content-between'>
+                        <div className='row align-items-center justify-content-between'>
                               <div className='col-lg-7' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                                     <div className={styles.home_slider_restaurant}>
                                           <h1>Number One Platform for All Services</h1>
@@ -24,10 +24,11 @@ const Slider = () => {
                               </div>
                               <div className='col-lg-5' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                               <div className={styles.home_slider_img}>
-                                    <Image height={640} width={339} priority={true} className={styles.home_slider_res_img} src={ImgRes} alt='Restauran'/>
+                                    <Image  priority={true} className={styles.home_slider_res_img} src={ImgRes} alt='Restauran'/>
                                     {/* <div className={styles.home_slider_location_container}>
                                           <GrLocation className={styles.home_slider_location_icon} />
                                           <div>
+                                          // height={640} width={339}
                                                 <h6>Best Restaurant</h6>
                                                 <p>In your city</p>
                                           </div>
