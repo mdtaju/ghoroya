@@ -31,7 +31,7 @@
   padding: 5px;
   cursor: pointer;
   color: #000;
-  transition: all ease 0.2s;
+  transition: color ease 0.2s;
 }
 .navbar ul li:hover {
   color: var(--primaryOrange);
@@ -88,4 +88,48 @@
   font-size: 1.5rem;
   line-height: 10px;
   color: gray;
+}
+
+.NavDropDown_container {
+  position: relative;
+  padding: 5px 0px;
+}
+.NavDropDown_container:hover .NavDropDown_list {
+  visibility: visible;
+  transform: translateY(10px);
+}
+
+.NavDropDown_select {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+.NavDropDown_select span {
+  font-size: 1.2rem;
+}
+
+.NavDropDown_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px !important;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #fff;
+  padding: 30px 25px 15px 25px !important;
+  margin: 0;
+  border-radius: 5px;
+  align-items: flex-start !important;
+  visibility: hidden;
+  transition: transform ease 0.3s;
+}
+.NavDropDown_list li {
+  cursor: pointer;
+  transform: translateX(0px);
+  transition: transform ease 0.3s !important;
+}
+.NavDropDown_list li:hover {
+  transform: translateX(5px);
 }/*# sourceMappingURL=NavBar.module.css.map */

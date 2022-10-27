@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import Logo from '../public/Images/ghoroya_logo.jpg';
 import styles from '../styles/NavBar/NavBar.module.css';
+import NavDropDown from './NavDropDown';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
@@ -37,6 +38,7 @@ const Nav = () => {
                         <div className='flex align-items-center'>
                               
                         </div>
+                              <NavDropDown />
                               <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
                                     <button className={`button button_2`}>download app</button>
                               </a> 
