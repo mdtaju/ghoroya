@@ -1,0 +1,88 @@
+{
+  "global": {
+    "button": "Download App",
+    "lan": "ENG"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "slider": {
+    "title": "Number One Platform for All Services",
+    "subtitle": "All services are available through a single app. Ghoroya app enables small and medium entrepreneurs to sell and buy their products from home through a home app."
+  },
+  "howItWork": {
+    "secOne": {
+      "num": "01",
+      "title": "The Best Deals In Town!",
+      "subtitle": "Only at Ghoroya app can you find the finest deals and package deals!"
+    },
+    "secTwo": {
+      "num": "02",
+      "title": "There are so many options.",
+      "subtitle": "Browse through our app's hundreds of eateries to find your favorite."
+    },
+    "secThree": {
+      "num": "03",
+      "title": "Fastest Delivery",
+      "subtitle": "Receive your food delivery in less an hour! That is the fastest it will go."
+    }
+  },
+  "homeAppScreen": {
+    "topTitle": {
+      "title": "Purchase food from",
+      "subtitle": "Ghoroya Food"
+    },
+    "bottomTitle": {
+      "title": "Download the App",
+      "subtitle": "To receive the quickest delivery, download the Ghoroya App and place your online food order."
+    }
+  },
+  "foodOrder": {
+    "title": "Food Delivery in Less Than an Hour",
+    "subtitle": "Get your meal delivered in an hour to your door with Ghoroya food!"
+  },
+  "counterSec": {
+    "mainTitle": "Service shows good taste.",
+    "areaOne": {
+      "num": "2k",
+      "des": "Satisfied",
+      "desTwo": "Customer"
+    },
+    "areaTwo": {
+      "num": "12",
+      "des": "Food",
+      "desTwo": "Items"
+    },
+    "areaThree": {
+      "num": "2.5k",
+      "des": "Food",
+      "desTwo": "Delivered"
+    }
+  },
+  "footer": {
+    "secOne": {
+      "title": "Number One Platform for All Services",
+      "subtitle": "All services are available through a single app. Ghoroya app enables small and medium entrepreneurs to sell and buy their products from home through a home app."
+    },
+    "secTwo": {
+      "menu": "Menu",
+      "menuOne": "Home",
+      "menuTwo": "About Us",
+      "menuThree": "Contact"
+    },
+    "secThree": {
+      "title": "Contract",
+      "location": "Opposite to Agrabad Fire Service Station, Sheikh Mujib Road, Dewanhat, Chittagong, Bangladesh, Chittagong, Bangladesh",
+      "mail": "info@ghoroya.com",
+      "phone": "8801815-503745",
+      "whatsApp": "8801707-201464"
+    },
+    "bottomArea": {
+      "copyWrite": "Copyright © 2022. Ghoroya.com All rights reserved.",
+      "policy": "Privacy Policy",
+      "terms": "Terms & Services"
+    }
+  }
+}

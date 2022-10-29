@@ -1,4 +1,3 @@
-import { Switch } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
@@ -18,6 +17,7 @@ import { ImMenu } from 'react-icons/im';
 import { RiContactsFill } from 'react-icons/ri';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
 import styles from '../styles/NavBar/NavBar.module.css';
+import NavDropDown from './NavDropDown';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
@@ -114,11 +114,13 @@ export default function MobileNav() {
                         onClose={toggleDrawer(anchor, false)}
                   >
                         {list(anchor)}
-                        <div style={{paddingLeft:'20px'}}>
+                        {/* <div style={{paddingLeft:'20px'}}>
                               <span>English / বাংলা</span>
                               <Switch {...label} defaultChecked />
-                        </div>
+                        </div> */}
+                        <NavDropDown />
                         <Divider />
+
                   </Drawer>
                   </React.Fragment>
                   ))}

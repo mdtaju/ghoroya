@@ -34,7 +34,7 @@
   transition: color ease 0.2s;
 }
 .navbar ul li:hover {
-  color: var(--primaryOrange);
+  color: var(--primaryOrange) !important;
 }
 
 .nav_cart_container {

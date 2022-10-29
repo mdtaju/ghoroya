@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { BsArrowRight, BsFillTelephoneFill } from 'react-icons/bs';
 import { GrFacebookOption } from 'react-icons/gr';
 import { HiLocationMarker, HiMail } from 'react-icons/hi';
@@ -12,6 +13,7 @@ import GooglePlay from '../public/Images/google-play-store.png';
 import styles from '../styles/Footer/Footer.module.css';
 
 const Footer = () => {
+      const {t} = useTranslation();
       return (
             <footer className={`gap no-top ${styles.footer_container}`}>
                   <div className="container">
@@ -19,8 +21,8 @@ const Footer = () => {
                               <div className="col-lg-5 col-md-6 col-sm-12">
                                     <div className={styles.footer_description}>
                                           <Image style={{borderRadius:'10px'}} src={Logo} alt='logo' width={70} height={70} />
-                                          <h1>Number One Platform for All Services</h1>
-                                          <p>All services are available through a single app. Ghoroya app enables small and medium entrepreneurs to sell and buy their products from home through a home app.</p>
+                                          <h1>{t("footer.secOne.title")}</h1>
+                                          <p>{t("footer.secOne.subtitle")}</p>
                                           <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
                                           <Image height={50} width={154} src={GooglePlay} alt='googleplaystore' />
                                           </a> 
@@ -28,26 +30,26 @@ const Footer = () => {
                               </div>
                               <div className="col-lg-3 col-md-6 col-sm-12">
                                     <div className={styles.footer_menu}>
-                                          <h4>Menu</h4>
+                                          <h4>{t("footer.secTwo.menu")}</h4>
                                           <ul>
                                                 <Link href={'/'}>
-                                                      <li>Home <span className={styles.footer_menu_icon}><BsArrowRight /></span></li>
+                                                      <li>{t("footer.secTwo.menuOne")} <span className={styles.footer_menu_icon}><BsArrowRight /></span></li>
                                                 </Link>
                                                 <Link href={'/about'}>
-                                                      <li>About Us <span className={styles.footer_menu_icon}><BsArrowRight /></span></li>
+                                                      <li>{t("footer.secTwo.menuTwo")} <span className={styles.footer_menu_icon}><BsArrowRight /></span></li>
                                                 </Link>
                                                 <Link href={'/contact'}>
-                                                      <li>Contact <span className={styles.footer_menu_icon}><BsArrowRight /></span></li>
+                                                      <li>{t("footer.secTwo.menuThree")} <span className={styles.footer_menu_icon}><BsArrowRight /></span></li>
                                                 </Link>
                                           </ul>
                                     </div>
                               </div>
                               <div className="col-lg-4 col-md-6 col-sm-12">
                                     <div className={styles.footer_contract}>
-                                          <h4>Contract</h4>
+                                          <h4>{t("footer.secThree.title")}</h4>
                                           <div className={styles.footer_location}>
                                                 <span><HiLocationMarker /></span>
-                                                <p>Opposite to Agrabad Fire Service Station, Sheikh Mujib Road, Dewanhat, Chittagong, Bangladesh, Chittagong, Bangladesh</p>
+                                                <p>{t("footer.secThree.location")}</p>
                                           </div>
                                           <div className={styles.footer_mail}>
                                                 <HiMail />
@@ -55,11 +57,11 @@ const Footer = () => {
                                           </div>
                                           <div className={styles.footer_phone}>
                                                 <BsFillTelephoneFill />
-                                                <p>+8801815-503745</p>
+                                                <p>+{t("footer.secThree.phone")}</p>
                                           </div>
                                           <div className={styles.footer_phone}>
                                                 <RiWhatsappFill />
-                                                <p>+8801707-201464</p>
+                                                <p>+{t("footer.secThree.whatsApp")}</p>
                                           </div>
                                     </div>
                                     <ul className={styles.footer_social_icon}>
@@ -87,10 +89,10 @@ const Footer = () => {
                               </div>
                         </div>
                         <div className={styles.footer_bottom_part}>
-                              <p>Copyright © 2022. Ghoroya.com All rights reserved.</p>
+                              <p>{t("footer.bottomArea.copyWrite")}</p>
                               <div style={{display:'flex', alignItems:'center', gap:'20px'}}>
-                                    <span>Privacy Policy</span>
-                                    <span>Terms & Services</span>
+                                    <span>{t("footer.bottomArea.policy")}</span>
+                                    <span>{t("footer.bottomArea.terms")}</span>
                               </div>
                         </div>
                   </div>

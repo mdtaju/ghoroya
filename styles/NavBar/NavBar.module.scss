@@ -31,7 +31,7 @@
     color: #000;
     transition: color ease 0.2s;
     &:hover {
-      color: var(--primaryOrange);
+      color: var(--primaryOrange) !important;
     }
   }
 }
