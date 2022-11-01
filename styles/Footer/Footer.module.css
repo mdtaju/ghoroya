@@ -10,9 +10,15 @@
 }
 
 .footer_description h1 {
+  font-size: 2.5rem !important;
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .footer_description {
+    padding-right: 20px;
+  }
+}
 .footer_menu h4,
 .footer_contract h4 {
   color: #787878 !important;

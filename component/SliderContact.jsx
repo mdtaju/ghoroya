@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { HiLocationMarker, HiMail, HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { MdPermPhoneMsg } from 'react-icons/md';
 import ImgRes from '../public/Images/contacts-1.png';
 import styles from '../styles/Slider/Slider.module.css';
 
 const SliderAbout = () => {
+      const {t} = useTranslation();
       return (
             <section style={{marginBottom:'100px'}} className={styles.slider_container}>
                   <div className="container">
@@ -15,19 +17,19 @@ const SliderAbout = () => {
                                     <div className={styles.home_slider_restaurant}>
                                           <ul>
                                                 <Link href={'/'}>
-                                                <li>Home</li>
+                                                <li>{t("nav.home")}</li>
                                                 </Link>
                                                 <li><HiOutlineArrowNarrowRight /></li>
                                                 <Link href={'/contact'}>
-                                                <li>Contact</li>
+                                                <li>{t("nav.contact")}</li>
                                                 </Link>
                                           </ul>
-                                          <h1>Contact us</h1>
-                                          <p>Contact us for any of your needs. 24/7</p>
+                                          <h1>{t("sliderContact.title")}</h1>
+                                          <p>{t("sliderContact.subtitle")}</p>
                                           <div className={styles.sliderContact_contact_container}>
                                                 <div className={styles.sliderContact_contact_card}>
                                                       <span className={styles.sliderContact_contact_icon}><HiLocationMarker /></span>
-                                                      <h6>Opposite to Agrabad Fire Service Station, Sheikh Mujib Road, Dewanhat, Chittagong, Bangladesh, Chittagong, Bangladesh</h6>
+                                                      <h6>{t("footer.secThree.location")}</h6>
                                                 </div>
                                                 <div className={styles.sliderContact_contact_card}>
                                                       <span className={styles.sliderContact_contact_icon}><HiMail /></span>
@@ -35,8 +37,8 @@ const SliderAbout = () => {
                                                 </div>
                                                 <div className={styles.sliderContact_contact_card}>
                                                       <span className={styles.sliderContact_contact_icon}><MdPermPhoneMsg /></span>
-                                                      <h6>+8801815-503745</h6>
-                                                      <h6>+8801707-201464</h6>
+                                                      <h6>+{t("footer.secThree.phone")}</h6>
+                                                      <h6>+{t("footer.secThree.whatsApp")}</h6>
                                                 </div>
                                           </div>
                                     </div>

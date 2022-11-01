@@ -20,11 +20,11 @@
   padding: 0;
   box-sizing: border-box;
   // font-family: "Montserrat", sans-serif;
-  font-family: "Poppins", sans-serif;
+  // font-family: "Poppins", sans-serif;
   // font-family: "Mukti";
 }
 .mukti {
-  font-family: "Mukti";
+  font-family: "Mukti" !important;
 }
 .poppins {
   font-family: "Poppins", sans-serif;
@@ -79,7 +79,7 @@ h6 {
 
 h1 {
   line-height: 4rem !important;
-  font-size: 3rem !important;
+  font-size: 2.7rem !important;
   font-weight: bold !important;
 }
 

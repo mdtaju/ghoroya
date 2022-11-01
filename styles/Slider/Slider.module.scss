@@ -6,11 +6,11 @@
   padding-top: 150px;
 }
 
-@media (max-width: 1400px) {
-  .home_slider_restaurant h1 {
-    width: 82%;
-  }
-}
+// @media (max-width: 1400px) {
+//   .home_slider_restaurant h1 {
+//     width: 82%;
+//   }
+// }
 @media (max-width: 768px) {
   .slider_container {
     padding-top: 120px;
@@ -39,7 +39,6 @@
   }
 }
 .home_slider_img {
-  position: relative;
   text-align: right;
 }
 @media (max-width: 768px) {
@@ -125,4 +124,15 @@
 .sliderContact_contact_icon {
   font-size: 3rem;
   color: var(--primaryOrange);
+}
+
+// about slider
+.home_slider_res_img {
+  float: right !important;
+}
+@media (max-width: 768px) {
+  .home_slider_res_img {
+    float: none;
+    margin: 0px auto;
+  }
 }

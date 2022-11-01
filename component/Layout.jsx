@@ -1,28 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Footer from './Footer';
 import MainNav from './MainNav';
+import PaySponsor from './PaySponsor';
 
 const Layout = ({children}) => {
       const [fontStyle, setFontStyle] = useState(true);
-      // const [changeLan, setChangeLan] = useState('en');
+      console.log(fontStyle)
+      const {i18n} = useTranslation();
 
-      // useEffect(() => {
-      //       if (typeof window !== 'undefined') {
-      //             // Perform localStorage action
-      //             const lan = localStorage.getItem('lan')
-      //             setChangeLan(lan);
-      //             if (lan === 'bn') {
-      //                   setFontStyle(false)
-      //             }
-      //       }
-      // }, [changeLan])
+      useEffect(() => {
+            if (typeof window !== 'undefined') {
+                  // Perform localStorage action
+                  const lan = localStorage.getItem('lan')
+                  i18n.changeLanguage(lan);
+                  if (lan === 'bn') {
+                        setFontStyle(false)
+                  }
+            }
+      }, [i18n]);
       return (
-            <div className={!fontStyle ? 'mukti' : 'poppins'}>
+            <div style={!fontStyle ? {fontFamily:'Mukti'} : {fontFamily:'"Poppins", sans-serif'}}>
                   <MainNav setFont={setFontStyle} font={fontStyle} />
                   <>
                         {children}
                   </>
                   {/* <Subscribe /> */}
+                  <PaySponsor />
                   <Footer />
             </div>
       );
