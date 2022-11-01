@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Footer from './Footer';
 import MainNav from './MainNav';
-import PaySponsor from './PaySponsor';
 
 const Layout = ({children}) => {
       const [fontStyle, setFontStyle] = useState(true);
@@ -26,7 +25,6 @@ const Layout = ({children}) => {
                         {children}
                   </>
                   {/* <Subscribe /> */}
-                  <PaySponsor />
                   <Footer />
             </div>
       );

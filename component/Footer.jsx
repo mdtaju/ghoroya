@@ -11,6 +11,7 @@ import { RiInstagramLine, RiWhatsappFill } from 'react-icons/ri';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
 import GooglePlay from '../public/Images/google-play-store.png';
 import styles from '../styles/Footer/Footer.module.css';
+import PaySponsor from './PaySponsor';
 
 const Footer = () => {
       const {t} = useTranslation();
@@ -20,11 +21,11 @@ const Footer = () => {
                         <div className="row">
                               <div className="col-lg-5 col-md-6 col-sm-12">
                                     <div className={styles.footer_description}>
-                                          <Image style={{borderRadius:'10px'}} src={Logo} alt='logo' width={70} height={70} />
+                                          <Image priority={true} style={{borderRadius:'10px'}} src={Logo} alt='logo' width={70} height={70} />
                                           <h1>{t("footer.secOne.title")}</h1>
                                           <p>{t("footer.secOne.subtitle")}</p>
                                           <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
-                                          <Image height={50} width={154} src={GooglePlay} alt='googleplaystore' />
+                                          <Image priority={true} height={50} width={154} src={GooglePlay} alt='googleplaystore' />
                                           </a> 
                                     </div>
                               </div>
@@ -88,6 +89,7 @@ const Footer = () => {
                                     </ul>
                               </div>
                         </div>
+                        <PaySponsor />
                         <div className={styles.footer_bottom_part}>
                               <p>{t("footer.bottomArea.copyWrite")}</p>
                               <div style={{display:'flex', alignItems:'center', gap:'20px'}}>

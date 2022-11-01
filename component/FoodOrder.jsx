@@ -12,7 +12,7 @@ const FoodOrder = () => {
                         <div className="row align-items-center">
                               <div className="col-lg-5 col-sm-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                                     <div>
-                                          <Image src={Img} alt='res' />
+                                          <Image priority={true} src={Img} alt='res' />
                                     </div>
                               </div>
                               <div className="col-lg-6 offset-lg-1 col-sm-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">

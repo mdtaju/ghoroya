@@ -24,13 +24,13 @@ const HomeAppScreen = () => {
                                           <h1>{t("homeAppScreen.bottomTitle.title")}</h1>
                                           <p>{t("homeAppScreen.bottomTitle.subtitle")}</p>
                                           <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
-                                                <Image src={ImgGoogle} height={50} width={154} alt='googleplaystore' />
+                                                <Image priority={true} src={ImgGoogle} height={50} width={154} alt='googleplaystore' />
                                           </a>
                                     </div>
                               </div>
                               <div className="col-lg-5 offset-lg-1 col-sm-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
                                     <div className={styles.homeAppScreen_screen_container}>
-                                          <Image height={640} width={339} src={Img} alt='res' />
+                                          <Image priority={true} height={640} width={339} src={Img} alt='res' />
                                     </div>
                               </div>
                         </div>

@@ -32,7 +32,8 @@ const SliderAbout = () => {
                               <div className={styles.home_slider_img}>
                                     <div style={{textAlign:'center'}}>
                                     <Image width={300} height={372} priority={true} style={{borderRadius:'25px'}} src={ImgRes} alt='Restauran'/>
-                                    <p>{t("sliderAbout.identity")} <span style={{color:'var(--primaryGreen)'}}>Ghoroya.com</span></p>
+                                    <p style={{marginTop:'10px', marginBottom:"3px", fontWeight:"bold"}}>{t("sliderAbout.identity")} </p>
+                                    <p>{t("sliderAbout.identityTwo")} <span style={{color:'var(--primaryGreen)'}}>Ghoroya.com</span></p>
                                     </div>
                                     {/* <div className={styles.home_slider_location_container}>
                                           <GrLocation className={styles.home_slider_location_icon} />

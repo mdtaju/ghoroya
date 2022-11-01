@@ -121,4 +121,11 @@
 }
 .footer_bottom_part span {
   cursor: pointer;
+}
+
+.paySponsor_container {
+  padding: 20px;
+  background: #cfcfcf;
+  border-radius: 10px;
+  margin-top: 50px;
 }/*# sourceMappingURL=Footer.module.css.map */
