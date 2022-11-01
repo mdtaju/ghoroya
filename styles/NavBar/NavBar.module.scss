@@ -84,6 +84,22 @@
   line-height: 10px;
   color: gray;
 }
+.mobileNav_lan_area {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-left: 16px;
+  padding-bottom: 7px;
+  color: gray;
+}
+.mobileNav_lan_icon {
+  font-size: 1.5rem;
+}
+.mobileNav_lan_area_lan {
+  padding: 7px 0px 7px 72px;
+  color: gray;
+  font-size: 1rem;
+}
 
 // Nav Drop Down
 .NavDropDown_container {

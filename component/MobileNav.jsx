@@ -11,23 +11,32 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import * as React from 'react';
+import { useTranslation } from 'react-i18next';
 import { AiFillCloseCircle, AiFillHome } from 'react-icons/ai';
+import { BiChevronDown } from 'react-icons/bi';
 import { BsInfoSquareFill } from 'react-icons/bs';
 import { ImMenu } from 'react-icons/im';
 import { RiContactsFill } from 'react-icons/ri';
+import { TbWorld } from 'react-icons/tb';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
 import styles from '../styles/NavBar/NavBar.module.css';
-import NavDropDown from './NavDropDown';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
-export default function MobileNav() {
+export default function MobileNav({font, setFont}) {
       const location = useRouter();
       const navColor = {
             color: '#808080',
       }
       const navActive = {
             color: '#f6c900'
+      }
+      const {t, i18n} = useTranslation();
+
+      const handleChangeLan = (lan) => {
+            i18n.changeLanguage(lan);
+            localStorage.setItem("lan", lan);
+            setFont(!font)
       }
   const [state, setState] = React.useState({
     left: false,
@@ -60,7 +69,7 @@ export default function MobileNav() {
                               className={styles.mobileNav_menu_item_icon}
                         ><AiFillHome /></span>
                   </ListItemIcon>
-                  <ListItemText primary={'Home'} />
+                  <ListItemText primary={t("nav.home")} />
                   </ListItemButton>
             </ListItem>
           </Link>
@@ -75,7 +84,7 @@ export default function MobileNav() {
                                     className={styles.mobileNav_menu_item_icon}
                               ><BsInfoSquareFill /></span>
                         </ListItemIcon>
-                        <ListItemText primary={'About Us'} />
+                        <ListItemText primary={t("nav.about")} />
                         </ListItemButton>
                   </ListItem>
             </Link>
@@ -90,7 +99,7 @@ export default function MobileNav() {
                                     className={styles.mobileNav_menu_item_icon}
                                     ><RiContactsFill /></span>
                         </ListItemIcon>
-                        <ListItemText primary={'Contact'} />
+                        <ListItemText primary={t("nav.contact")} />
                         </ListItemButton>
                   </ListItem>
             </Link>
@@ -114,11 +123,19 @@ export default function MobileNav() {
                         onClose={toggleDrawer(anchor, false)}
                   >
                         {list(anchor)}
-                        {/* <div style={{paddingLeft:'20px'}}>
-                              <span>English / বাংলা</span>
-                              <Switch {...label} defaultChecked />
-                        </div> */}
-                        <NavDropDown />
+                        <div className={styles.mobileNav_lan_area}>
+                              <span className={styles.mobileNav_lan_icon}><TbWorld /></span>
+                              <span>{t("global.language")}</span>
+                              <span style={{fontSize:'1.5rem'}}><BiChevronDown /></span>
+                        </div>
+                        <Divider />
+                        <div onClick={() => handleChangeLan('en')} className={styles.mobileNav_lan_area_lan}>
+                              <span>English</span>
+                        </div>
+                        <Divider />
+                        <div onClick={() => handleChangeLan('bn')} className={styles.mobileNav_lan_area_lan}>
+                              <span>বাংলা</span>
+                        </div>
                         <Divider />
 
                   </Drawer>

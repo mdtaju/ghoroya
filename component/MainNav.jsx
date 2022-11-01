@@ -9,7 +9,7 @@ const MainNav = ({setFont, font}) => {
             <>
                   {
                         windowWidth.width < 782 ?
-                        <MobileNav /> : <Nav setFont={setFont} font={font}/>
+                        <MobileNav setFont={setFont} font={font} /> : <Nav setFont={setFont} font={font}/>
                   }
             </>
       );

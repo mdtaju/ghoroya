@@ -1,7 +1,8 @@
 {
   "global": {
     "button": "Download App",
-    "lan": "ENG"
+    "lan": "ENG",
+    "language": "Language"
   },
   "nav": {
     "home": "Home",
