@@ -10,7 +10,7 @@ import styles from '../styles/Slider/Slider.module.css';
 const SliderAbout = () => {
       const {t} = useTranslation();
       return (
-            <section style={{marginBottom:'100px'}} className={styles.slider_container}>
+            <section className={styles.slider_container}>
                   <div className="container">
                         <div className='row align-items-center'>
                               <div className='col-lg-7' data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
