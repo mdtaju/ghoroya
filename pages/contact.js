@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import GoogleMapCom from '../component/GoogleMapCom';
 // import GoogleMap from '../component/GoogleMap';
 import Layout from '../component/Layout';
 import SliderContact from '../component/SliderContact';
@@ -14,7 +15,7 @@ export default function Contact() {
       </Head>
       <Layout>
       <SliderContact />
-      {/* <GoogleMap /> */}
+      <GoogleMapCom />
         {/* <HowItWork /> */}
         {/* <CounterSection /> */}
       </Layout>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Footer from './Footer';
-import GoogleMapCom from './GoogleMapCom';
 import MainNav from './MainNav';
 
 const Layout = ({children}) => {
@@ -26,7 +25,6 @@ const Layout = ({children}) => {
                         {children}
                   </>
                   {/* <Subscribe /> */}
-                  <GoogleMapCom />
                   <Footer />
             </div>
       );
