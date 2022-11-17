@@ -2,12 +2,13 @@ import React from 'react';
 import { MessengerChat } from "react-messenger-chat-plugin";
 
 const Messenger = () => {
+
       return (
             <div>
                   <MessengerChat
                         pageId="100072578250427"
                         language="en_US"
-                        themeColor={"#000000"}
+                        themeColor={"#fff"}
                         bottomSpacing={300}
                         loggedInGreeting="loggedInGreeting"
                         loggedOutGreeting="loggedOutGreeting"

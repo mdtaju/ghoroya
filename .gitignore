@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+# Unused Images 
+/public/ignor-images/
 # testing
 /coverage
 
