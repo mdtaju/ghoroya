@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BsArrowRight, BsFillTelephoneFill } from 'react-icons/bs';
 import { GrFacebookOption } from 'react-icons/gr';
@@ -8,13 +8,17 @@ import { HiLocationMarker, HiMail } from 'react-icons/hi';
 import { IoLogoYoutube } from 'react-icons/io';
 // IoLogoGooglePlaystore
 import { RiInstagramLine, RiWhatsappFill } from 'react-icons/ri';
+import { TbLicense } from 'react-icons/tb';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
 import GooglePlay from '../public/Images/google-play-store.png';
 import styles from '../styles/Footer/Footer.module.css';
 import PaySponsor from './PaySponsor';
+import PDFViewer from './PDFViewer';
 
 const Footer = () => {
       const {t} = useTranslation();
+      const [open, setOpen] = useState(false);
+      
       return (
             <footer className={`gap no-top ${styles.footer_container}`}>
                   <div className="container">
@@ -24,9 +28,13 @@ const Footer = () => {
                                           <Image priority={true} style={{borderRadius:'10px'}} src={Logo} alt='logo' width={70} height={70} />
                                           <h1>{t("footer.secOne.title")}</h1>
                                           <p>{t("footer.secOne.subtitle")}</p>
-                                          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
-                                          <Image priority={true} height={50} width={154} src={GooglePlay} alt='googleplaystore' />
-                                          </a> 
+                                          <div className={styles.footer_description_buttons}>
+                                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
+                                                <Image priority={true} height={50} width={154} src={GooglePlay} alt='googleplaystore' />
+                                                </a> 
+                                                <button onClick={() => setOpen(true)} className='button button_2'>Trade License <TbLicense /></button>
+                                                <PDFViewer open={open} setOpen={setOpen} />
+                                          </div>
                                     </div>
                               </div>
                               <div className="col-lg-3 col-md-6 col-sm-12">

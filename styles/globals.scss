@@ -20,7 +20,7 @@
   padding: 0;
   box-sizing: border-box;
   // font-family: "Montserrat", sans-serif;
-  // font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   // font-family: "Mukti";
 }
 .mukti {
@@ -45,7 +45,7 @@
   text-transform: uppercase;
 }
 .button_2 {
-  color: #fff;
+  color: #000;
   border: 2px solid var(--primaryOrange);
   background-image: -webkit-linear-gradient(
     30deg,

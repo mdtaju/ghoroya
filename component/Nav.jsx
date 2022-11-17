@@ -24,7 +24,7 @@ const Nav = ({setFont, font}) => {
                   <div className={`container ${styles.navbar}`}>
                         <ul>
                               <li>
-                                    <Image src={Logo} alt='logo' width={60} height={60} />
+                                    <Image src={Logo} alt='ghoroya, logo' width={60} height={60} />
                               </li>
                               <Link href='/'>
                               <li style={location.pathname === '/' ? navActive : navColor }>{t("nav.home")}</li>

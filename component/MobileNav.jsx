@@ -113,7 +113,7 @@ export default function MobileNav({font, setFont}) {
     <div className={styles.mobileNav_container}>
       <div className='container'>
             <div className={styles.mobileNav_inner_container}>
-                  <Image src={Logo} alt='logo' width={60} height={60} priority={true} />
+                  <Image src={Logo} alt='ghoroya,logo' width={60} height={60} priority={true} />
                   {['left'].map((anchor) => (
                   <React.Fragment key={anchor}>
                   <span onClick={toggleDrawer(anchor, true)} className={styles.mobileNav_icon}><ImMenu /></span>

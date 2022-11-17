@@ -5,7 +5,6 @@ import MainNav from './MainNav';
 
 const Layout = ({children}) => {
       const [fontStyle, setFontStyle] = useState(true);
-      console.log(fontStyle)
       const {i18n} = useTranslation();
 
       useEffect(() => {

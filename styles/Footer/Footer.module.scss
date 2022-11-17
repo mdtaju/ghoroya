@@ -26,10 +26,20 @@
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+.footer_description_buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 @media (max-width: 768px) {
   .footer_menu h4,
   .footer_contract h4 {
     margin-top: 30px;
+  }
+  .footer_description_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 .footer_menu ul {
