@@ -10,12 +10,11 @@ const Messenger = () => {
 
                   <div id="fb-customer-chat"
                         className="fb-customerchat"
-                        page_id="100072578250427"
                   ></div>
                   <Script strategy="lazyOnload">
                         {`
                   var chatbox = document.getElementById('fb-customer-chat');
-                  chatbox.setAttribute("page_id", "YOUR_PAGE_ID");
+                  chatbox.setAttribute("page_id", "100072578250427");
                   chatbox.setAttribute("attribution", "biz_inbox");
             
                   window.fbAsyncInit = function() {
