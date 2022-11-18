@@ -4,7 +4,7 @@ import FoodOrder from '../component/FoodOrder'
 import HomeAppScreen from '../component/HomeAppScreen'
 import HowItWork from '../component/HowItWork'
 import Layout from '../component/Layout'
-import Messenger from '../component/Messenger'
+// import Messenger from '../component/Messenger'
 import Slider from '../component/Slider'
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         <HomeAppScreen />
         <FoodOrder />
         <CounterSection />
-        <Messenger />
+        {/* <Messenger /> */}
       </Layout>
     </>
   )

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Head from "next/head";
 import { useEffect } from "react";
 import '../component/i18next';
+import Messenger from "../component/Messenger";
 import Logo from '../public/Images/ghoroya_logo.jpg';
 import '../styles/globals.css';
 
@@ -33,6 +34,7 @@ function MyApp({ Component, pageProps }) {
           content={Logo}
         />
       </Head>
+      <Messenger />
       <Component {...pageProps} />
     </>
   )
