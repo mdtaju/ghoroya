@@ -8,7 +8,10 @@ const Messenger = () => {
             <div>
                   <div id="fb-root"></div>
 
-                  <div id="fb-customer-chat" className="fb-customerchat"></div>
+                  <div id="fb-customer-chat"
+                        className="fb-customerchat"
+                        page_id="100072578250427"
+                  ></div>
                   <Script strategy="lazyOnload">
                         {`
                   var chatbox = document.getElementById('fb-customer-chat');
