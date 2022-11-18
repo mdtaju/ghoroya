@@ -11,6 +11,7 @@ const Messenger = () => {
                         <>
                               <MessengerChat
                                     pageId="100072578250427"
+                                    appId="2683194561811723"
                                     language="en_US"
                                     themeColor={"#000000"}
                                     bottomSpacing={300}
@@ -18,24 +19,24 @@ const Messenger = () => {
                                     loggedOutGreeting="loggedOutGreeting"
                                     greetingDialogDisplay={"show"}
                                     debugMode={true}
-                                    onMessengerShow={() => {
-                                          console.log("onMessengerShow");
-                                    }}
-                                    onMessengerHide={() => {
-                                          console.log("onMessengerHide");
-                                    }}
-                                    onMessengerDialogShow={() => {
-                                          console.log("onMessengerDialogShow");
-                                    }}
-                                    onMessengerDialogHide={() => {
-                                          console.log("onMessengerDialogHide");
-                                    }}
-                                    onMessengerMounted={() => {
-                                          console.log("onMessengerMounted");
-                                    }}
-                                    onMessengerLoad={() => {
-                                          console.log("onMessengerLoad");
-                                    }}
+                              // onMessengerShow={() => {
+                              //       console.log("onMessengerShow");
+                              // }}
+                              // onMessengerHide={() => {
+                              //       console.log("onMessengerHide");
+                              // }}
+                              // onMessengerDialogShow={() => {
+                              //       console.log("onMessengerDialogShow");
+                              // }}
+                              // onMessengerDialogHide={() => {
+                              //       console.log("onMessengerDialogHide");
+                              // }}
+                              // onMessengerMounted={() => {
+                              //       console.log("onMessengerMounted");
+                              // }}
+                              // onMessengerLoad={() => {
+                              //       console.log("onMessengerLoad");
+                              // }}
                               />
                               {/* <div id="fb-root"></div>
 
