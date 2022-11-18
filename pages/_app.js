@@ -13,27 +13,27 @@ function MyApp({ Component, pageProps }) {
     AOS.init({
       once: true
     });
-    
+
   }, []);
   return (
     <>
-        <Head>
-          <title>Ghoroya Foods, Arts & Crafts</title>
-          <meta name="description" content="Number One Platform for Ghoroya Foods, Arts & Crafts and Experts" key='desc' />
-          <link rel="icon" href="/favicon.ico" />
-          <meta property="og:title" content="Ghoroya Foods, Arts & Crafts" />
-          <meta
-            property="og:description"
-            content="Number One Platform for Ghoroya Foods, Arts & Crafts and Experts"
-          />
-          <meta name="keywords" content="ghoroya, app, food" />
-          <meta name="author" content="Abdur Rahim" />
-          <meta
-            property="og:image"
-            content={Logo}
-          />
-        </Head>
-        <Component {...pageProps} />
+      <Head>
+        <title>Ghoroya Foods, Arts & Crafts</title>
+        <meta name="description" content="Number One Platform for Ghoroya Foods, Arts & Crafts and Experts" key='desc' />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Ghoroya Foods, Arts & Crafts" />
+        <meta
+          property="og:description"
+          content="Number One Platform for Ghoroya Foods, Arts & Crafts and Experts"
+        />
+        <meta name="keywords" content="ghoroya, app, food" />
+        <meta name="author" content="Abdur Rahim" />
+        <meta
+          property="og:image"
+          content={Logo}
+        />
+      </Head>
+      <Component {...pageProps} />
     </>
   )
 }

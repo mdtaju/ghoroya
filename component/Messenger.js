@@ -1,5 +1,5 @@
-import Script from 'next/script';
 import React from 'react';
+import { MessengerChat } from 'react-messenger-chat-plugin';
 
 
 const Messenger = () => {
@@ -9,7 +9,35 @@ const Messenger = () => {
                   {
                         typeof window !== undefined &&
                         <>
-                              <div id="fb-root"></div>
+                              <MessengerChat
+                                    pageId="100072578250427"
+                                    language="en_US"
+                                    themeColor={"#000000"}
+                                    bottomSpacing={300}
+                                    loggedInGreeting="loggedInGreeting"
+                                    loggedOutGreeting="loggedOutGreeting"
+                                    greetingDialogDisplay={"show"}
+                                    debugMode={true}
+                                    onMessengerShow={() => {
+                                          console.log("onMessengerShow");
+                                    }}
+                                    onMessengerHide={() => {
+                                          console.log("onMessengerHide");
+                                    }}
+                                    onMessengerDialogShow={() => {
+                                          console.log("onMessengerDialogShow");
+                                    }}
+                                    onMessengerDialogHide={() => {
+                                          console.log("onMessengerDialogHide");
+                                    }}
+                                    onMessengerMounted={() => {
+                                          console.log("onMessengerMounted");
+                                    }}
+                                    onMessengerLoad={() => {
+                                          console.log("onMessengerLoad");
+                                    }}
+                              />
+                              {/* <div id="fb-root"></div>
 
                               <div id="fb-customer-chat"
                                     className="fb-customerchat"
@@ -35,7 +63,7 @@ const Messenger = () => {
                               fjs.parentNode.insertBefore(js, fjs);
                               }(document, 'script', 'facebook-jssdk'));
                               `}
-                              </Script>
+                              </Script> */}
                         </>
                   }
             </div>
