@@ -10,7 +10,7 @@ const Messenger = () => {
                         typeof window !== undefined &&
                         <>
                               <MessengerChat
-                                    pageId="100072578250427"
+                                    pageId="110011054741990"
                                     appId="2683194561811723"
                                     language="en_US"
                                     themeColor={"#000000"}
