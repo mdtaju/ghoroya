@@ -15,7 +15,7 @@ const Messenger = () => {
                                     language="en_US"
                                     themeColor={"#ffffff"}
                                     bottomSpacing={30}
-                                    loggedInGreeting="loggedInGreeting"
+                                    loggedInGreeting="Please login to chat."
                                     loggedOutGreeting="loggedOutGreeting"
                                     greetingDialogDisplay={"show"}
                                     debugMode={true}
