@@ -14,7 +14,7 @@ const Messenger = () => {
                                     appId="2683194561811723"
                                     language="en_US"
                                     themeColor={"#ffffff"}
-                                    bottomSpacing={5}
+                                    bottomSpacing={30}
                                     loggedInGreeting="loggedInGreeting"
                                     loggedOutGreeting="loggedOutGreeting"
                                     greetingDialogDisplay={"show"}
