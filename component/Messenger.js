@@ -11,11 +11,11 @@ const Messenger = () => {
                         <>
                               <MessengerChat
                                     pageId="110011054741990"
-                                    appId="2683194561811723"
+                                    // appId="2683194561811723"
                                     language="en_US"
                                     themeColor={"#ffffff"}
                                     bottomSpacing={30}
-                                    loggedInGreeting="Please login to chat."
+                                    loggedInGreeting='Please click the "Start chat" to chat with Ghoroya.com'
                                     loggedOutGreeting="loggedOutGreeting"
                                     greetingDialogDisplay={"show"}
                                     debugMode={true}
