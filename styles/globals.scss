@@ -68,6 +68,30 @@
     color: var(--primaryOrange);
   }
 }
+.button_3 {
+  color: #000;
+  border: 2px solid var(--primaryGreen);
+  background-image: -webkit-linear-gradient(
+    30deg,
+    var(--primaryGreen) 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    30deg,
+    var(--primaryGreen) 50%,
+    transparent 50%
+  );
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  &:hover {
+    background-position: 100%;
+    background-color: transparent;
+    color: var(--primaryGreen);
+  }
+}
 h1,
 h2,
 h3,

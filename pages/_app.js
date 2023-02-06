@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Ghoroya Foods, Arts & Crafts</title>
+        <title>Ghoroya Foods, Arts & Crafts gellary</title>
         <meta name="description" content="Number One Platform for Ghoroya Foods, Arts & Crafts and Experts" key='desc' />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="Ghoroya Foods, Arts & Crafts" />

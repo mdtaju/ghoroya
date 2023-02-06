@@ -16,23 +16,23 @@ import PaySponsor from './PaySponsor';
 import PDFViewer from './PDFViewer';
 
 const Footer = () => {
-      const {t} = useTranslation();
+      const { t } = useTranslation();
       const [open, setOpen] = useState(false);
-      
+
       return (
             <footer className={`gap no-top ${styles.footer_container}`}>
                   <div className="container">
                         <div className="row">
                               <div className="col-lg-5 col-md-6 col-sm-12">
                                     <div className={styles.footer_description}>
-                                          <Image priority={true} style={{borderRadius:'10px'}} src={Logo} alt='logo' width={70} height={70} />
+                                          <Image priority={true} style={{ borderRadius: '10px' }} src={Logo} alt='logo' width={70} height={70} />
                                           <h1>{t("footer.secOne.title")}</h1>
                                           <p>{t("footer.secOne.subtitle")}</p>
                                           <div className={styles.footer_description_buttons}>
                                                 <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
-                                                <Image priority={true} height={50} width={154} src={GooglePlay} alt='googleplaystore' />
-                                                </a> 
-                                                <button onClick={() => setOpen(true)} className='button button_2'>Trade License <TbLicense /></button>
+                                                      <Image priority={true} height={50} width={154} src={GooglePlay} alt='googleplaystore' />
+                                                </a>
+                                                <button onClick={() => setOpen(true)} className='button button_2'>{t("footer.secOne.button")} <TbLicense /></button>
                                                 <PDFViewer open={open} setOpen={setOpen} />
                                           </div>
                                     </div>
@@ -86,7 +86,7 @@ const Footer = () => {
                                           </a>
                                           <a target="_blank" href="https://www.youtube.com/channel/UC01sI-y0s3ZkQGX-NlYismw" rel="noopener noreferrer">
                                                 <li>
-                                                <IoLogoYoutube />
+                                                      <IoLogoYoutube />
                                                 </li>
                                           </a>
                                           {/* <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
@@ -100,8 +100,10 @@ const Footer = () => {
                         <PaySponsor />
                         <div className={styles.footer_bottom_part}>
                               <p>{t("footer.bottomArea.copyWrite")}</p>
-                              <div style={{display:'flex', alignItems:'center', gap:'20px'}}>
-                                    <span>{t("footer.bottomArea.policy")}</span>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                                    <Link href={'/privacy'}>
+                                          <span>{t("footer.bottomArea.policy")}</span>
+                                    </Link>
                                     <span>{t("footer.bottomArea.terms")}</span>
                               </div>
                         </div>

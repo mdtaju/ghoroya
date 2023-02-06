@@ -7,11 +7,14 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "gallery": "Gallery"
   },
   "slider": {
     "title": "Number One Platform for Ghoroya Foods, Arts & Crafts and Experts",
-    "subtitle": "Ghoroya Foods, Arts & Crafts and Experts are available through a single app. Ghoroya app enables small and medium entrepreneurs to sell and buy their products from home through a app."
+    "subtitle": "Ghoroya Foods, Arts & Crafts and Experts are available through a single app. Ghoroya app enables small and medium entrepreneurs to sell and buy their products from home through a app.",
+    "btnRider": "Join as Rider",
+    "btnExpert": "Join as Merchant"
   },
   "howItWork": {
     "secOne": {
@@ -65,7 +68,8 @@
   "footer": {
     "secOne": {
       "title": "Number One Platform for Ghoroya Foods, Arts & Crafts and Experts",
-      "subtitle": "Ghoroya Foods, Arts & Crafts and Experts are available through a single app. Ghoroya app enables small and medium entrepreneurs to sell and buy their products from home through a app."
+      "subtitle": "Ghoroya Foods, Arts & Crafts and Experts are available through a single app. Ghoroya app enables small and medium entrepreneurs to sell and buy their products from home through a app.",
+      "button": "Trade License"
     },
     "secTwo": {
       "menu": "Menu",
@@ -95,5 +99,8 @@
   "sliderContact": {
     "title": "Contact us",
     "subtitle": "Contact us for any of your needs. 24/7"
+  },
+  "gallery": {
+    "galleryTitle": "Merchant Partners"
   }
 }

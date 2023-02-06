@@ -10,8 +10,8 @@ import NavDropDown from './NavDropDown';
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 
-const Nav = ({setFont, font}) => {
-      const {t} = useTranslation();
+const Nav = ({ setFont, font }) => {
+      const { t } = useTranslation();
       const location = useRouter();
       const navColor = {
             color: '#000',
@@ -24,26 +24,29 @@ const Nav = ({setFont, font}) => {
                   <div className={`container ${styles.navbar}`}>
                         <ul>
                               <li>
-                                    <Image src={Logo} alt='ghoroya, logo' width={60} height={60} />
+                                    <Link href={"/"}>
+                                          <Image src={Logo} alt='ghoroya, logo' width={60} height={60} />
+                                    </Link>
                               </li>
                               <Link href='/'>
-                              <li style={location.pathname === '/' ? navActive : navColor }>{t("nav.home")}</li>
+                                    <li style={location.pathname === '/' ? navActive : navColor}>{t("nav.home")}</li>
                               </Link>
                               <Link href='/about'>
-                              <li style={location.pathname === '/about' ? navActive : navColor }>{t("nav.about")}</li>
+                                    <li style={location.pathname === '/about' ? navActive : navColor}>{t("nav.about")}</li>
                               </Link>
                               <Link href='/contact'>
-                              <li style={location.pathname === '/contact' ? navActive : navColor }>{t("nav.contact")}</li>
+                                    <li style={location.pathname === '/contact' ? navActive : navColor}>{t("nav.contact")}</li>
                               </Link>
+
                         </ul>
                         <div className={styles.nav_cart_container}>
-                        <div className='flex align-items-center'>
-                              
-                        </div>
+                              <div className='flex align-items-center'>
+
+                              </div>
                               <NavDropDown setFont={setFont} font={font} />
                               <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user" rel="noopener noreferrer">
                                     <button className={`button button_2`}>{t("global.button")}</button>
-                              </a> 
+                              </a>
                         </div>
                   </div>
             </nav>
