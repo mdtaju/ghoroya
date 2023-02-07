@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Apple",
+        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYQbRd-n35mcwUinrXthidS9_JpCoTmgBqw&usqp=CAU"
+    },
+    {
+        "id": 2,
+        "name": "Apple",
+        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYQbRd-n35mcwUinrXthidS9_JpCoTmgBqw&usqp=CAU"
+    },
+    {
+        "id": 3,
+        "name": "Apple",
+        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYQbRd-n35mcwUinrXthidS9_JpCoTmgBqw&usqp=CAU"
+    },
+    {
+        "id": 4,
+        "name": "Apple",
+        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYQbRd-n35mcwUinrXthidS9_JpCoTmgBqw&usqp=CAU"
+    },
+    {
+        "id": 5,
+        "name": "Apple",
+        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYQbRd-n35mcwUinrXthidS9_JpCoTmgBqw&usqp=CAU"
+    },
+    {
+        "id": 6,
+        "name": "Apple",
+        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYQbRd-n35mcwUinrXthidS9_JpCoTmgBqw&usqp=CAU"
+    }
+]

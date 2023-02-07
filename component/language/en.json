@@ -3,12 +3,18 @@
     "button": "Download App",
     "lan": "ENG",
     "language": "Language"
+    
+   
   },
   "nav": {
     "home": "Home",
     "about": "About Us",
     "contact": "Contact",
-    "gallery": "Gallery"
+    "gallery": "Gallery",
+    "category": "Category",
+    "foods":"Foods",
+    "artsandcrafts":"Arts and Crafts",
+    "experts": "Experts"
   },
   "slider": {
     "title": "Number One Platform for Ghoroya Foods, Arts & Crafts and Experts",

@@ -108,10 +108,16 @@
   color: gray;
   font-size: 1rem;
 }
+.mobileNav_lan_area_lan_foods {
+  padding: 7px 0px 7px ;
+  color: gray;
+  font-size: 1rem;
+}
 
 .NavDropDown_container {
   position: relative;
   padding: 5px 0px;
+  
 }
 .NavDropDown_container:hover .NavDropDown_list {
   visibility: visible;
@@ -129,13 +135,14 @@
 }
 
 .NavDropDown_list {
+  min-width: 260px;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px !important;
   position: absolute;
   top: 30px;
-  right: 0;
+  left: 0px;
   background-color: #fff;
   padding: 30px 25px 15px 25px !important;
   margin: 0;

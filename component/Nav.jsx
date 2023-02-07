@@ -5,6 +5,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Logo from '../public/Images/ghoroya_logo.jpg';
 import styles from '../styles/NavBar/NavBar.module.css';
+import CategoryDropDown from './CategoryDropDown';
 import NavDropDown from './NavDropDown';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
@@ -37,6 +38,8 @@ const Nav = ({ setFont, font }) => {
                               <Link href='/contact'>
                                     <li style={location.pathname === '/contact' ? navActive : navColor}>{t("nav.contact")}</li>
                               </Link>
+                              <CategoryDropDown setFont={setFont} font={font} />
+                             
 
                         </ul>
                         <div className={styles.nav_cart_container}>

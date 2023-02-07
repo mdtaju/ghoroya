@@ -7,13 +7,14 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import Collapse from "@mui/material/Collapse";
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { AiFillCloseCircle, AiFillHome } from 'react-icons/ai';
-import { BiChevronDown } from 'react-icons/bi';
+import { BiCategory, BiChevronDown } from 'react-icons/bi';
 import { BsInfoSquareFill } from 'react-icons/bs';
 import { ImMenu } from 'react-icons/im';
 import { RiContactsFill, RiGalleryFill } from 'react-icons/ri';
@@ -21,9 +22,15 @@ import { TbWorld } from 'react-icons/tb';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
 import styles from '../styles/NavBar/NavBar.module.css';
 
+// import ExpandLess from "@mui/icons-material/ExpandLess";
+// import ExpandMore from "@mui/icons-material/ExpandMore";
+// import StarBorder from "@mui/icons-material/StarBorder";
+// import InboxIcon from "@mui/icons-material/MoveToInbox";
+
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 export default function MobileNav({ font, setFont }) {
+
       const location = useRouter();
       const navColor = {
             color: '#808080',
@@ -116,6 +123,7 @@ export default function MobileNav({ font, setFont }) {
                                     </ListItemButton>
                               </ListItem>
                         </Link>
+
                         <Divider />
                   </List>
 
@@ -136,6 +144,66 @@ export default function MobileNav({ font, setFont }) {
                                                 onClose={toggleDrawer(anchor, false)}
                                           >
                                                 {list(anchor)}
+
+
+                                                {/* //language */}
+
+                                                <div className={styles.mobileNav_lan_area}>
+                                                      <span className={styles.mobileNav_lan_icon}><BiCategory /></span>
+                                                      <span>{t("nav.category")}</span>
+                                                      <span style={{ fontSize: '1.5rem' }}><BiChevronDown /></span>
+                                                </div>
+                                                <Divider />
+                                                <Link href={'/foods'} className={styles.mobileNav_lan_area_lan}>
+                                                      <ListItem disablePadding style={location.pathname === '/foods' ? navActive : navColor}>
+                                                            <ListItemButton>
+                                                                  <ListItemIcon>
+
+                                                                  </ListItemIcon>
+                                                                  <ListItemText primary={t("nav.foods")} />
+                                                            </ListItemButton>
+                                                      </ListItem>
+                                                </Link>
+                                                <Divider />
+                                                <Link href={'/artsandcrafts'} className={styles.mobileNav_lan_area_lan}>
+                                                      <ListItem disablePadding style={location.pathname === '/artsandcrafts' ? navActive : navColor}>
+                                                            <ListItemButton>
+                                                                  <ListItemIcon>
+
+                                                                  </ListItemIcon>
+                                                                  <ListItemText primary={t("nav.artsandcrafts")} />
+                                                            </ListItemButton>
+                                                      </ListItem>
+                                                </Link>
+                                                <Divider />
+                                                <Link href={'/category'} className={styles.mobileNav_lan_area_lan}>
+                                                      <ListItem disablePadding style={location.pathname === '/category' ? navActive : navColor}>
+                                                            <ListItemButton>
+                                                                  <ListItemIcon>
+
+                                                                  </ListItemIcon>
+                                                                  <ListItemText primary={t("nav.experts")} />
+                                                            </ListItemButton>
+                                                      </ListItem>
+                                                </Link>
+                                                <Divider />
+                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                                 <div className={styles.mobileNav_lan_area}>
                                                       <span className={styles.mobileNav_lan_icon}><TbWorld /></span>
                                                       <span>{t("global.language")}</span>
