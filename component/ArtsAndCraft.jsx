@@ -1,14 +1,15 @@
+import Image from 'next/image';
 import React from 'react';
 
 const ArtsAndCraft = ({ name, images }) => {
     return (
         <>
-             <div class="col">
-                <div class="card">
-                    <img src={images} class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title">{name}</h5>
-                        </div>
+            <div className="card-group">
+                <div className="card">
+                    <img src={images} height={175} width={160} className="card-img-top" alt='arts' />
+                    <div className="card-body">
+                        <h6 className="card-title">{name}</h6>
+                    </div>
                 </div>
             </div>
         </>

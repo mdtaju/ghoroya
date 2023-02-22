@@ -4,15 +4,15 @@ import React from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 const Food = ({ name, images }) => {
-    const {t, i18n} = useTranslation();
+   
     return (
         <>
        
             <div class="col">
                 <div class="card">
-                    <img src={images} class="card-img-top" alt="..."/>
+                    <img src={images} height={175} width={160} class="card-img-top" alt="..."/>
                         <div class="card-body">
-                            <h5 class="card-title">{name}</h5>
+                            <h6 class="card-title">{name}</h6>
                             
                         </div>
                 </div>

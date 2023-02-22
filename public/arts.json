@@ -2,31 +2,62 @@
     {
         "id": 1,
         "name": "Nokshikatha",
-        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwMPrtthps8Uxq_WMIkVuRfb7lXP5LWjQBQ&usqp=CAU"
+        "images": "./Images/arts/images.jpg"
     },
     {
         "id": 2,
-        "name": "Nokshikatha",
-        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwMPrtthps8Uxq_WMIkVuRfb7lXP5LWjQBQ&usqp=CAU"
+        "name": "Googley eyes",
+        "images": "./Images/arts/images (14).jpg"
     },
     {
         "id": 3,
-        "name": "Nokshikatha",
-        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwMPrtthps8Uxq_WMIkVuRfb7lXP5LWjQBQ&usqp=CAU"
+        "name": "Craft paint",
+        "images": "./Images/arts/images (15).jpg"
     },
     {
         "id": 4,
-        "name": "Nokshikatha",
-        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwMPrtthps8Uxq_WMIkVuRfb7lXP5LWjQBQ&usqp=CAU"
+        "name": "Sponge stamps",
+        "images": "./Images/arts/images (13).jpg"
     },
     {
         "id": 5,
-        "name": "Nokshikatha",
-        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwMPrtthps8Uxq_WMIkVuRfb7lXP5LWjQBQ&usqp=CAU"
+        "name": "Paper plates",
+        "images": "./Images/arts/images (5).jpg"
     },
     {
         "id": 6,
-        "name": "Nokshikatha",
-        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwMPrtthps8Uxq_WMIkVuRfb7lXP5LWjQBQ&usqp=CAU"
+        "name": "Paint brushes",
+        "images": "./Images/arts/images (6).jpg"
+    },
+    {
+        "id": 7,
+        "name": "Glue stick",
+        "images": "./Images/arts/images (7).jpg"
+    },
+    {
+        "id": 8,
+        "name": "Pom Poms",
+        "images": "./Images/arts/images (8).jpg"
+    },
+    {
+        "id": 9,
+        "name": "Tissue paper",
+        "images": "./Images/arts/images (9).jpg"
+    },
+    {
+        "id": 10,
+        "name": "Scissors",
+        "images": "./Images/arts/images (10).jpg"
+    },
+    {
+        "id": 11,
+        "name": "Popsicle sticks",
+        "images": "./Images/arts/images (11).jpg"
+    },
+    {
+        "id": 12,
+        "name": "Colored dot markers",
+        "images": "./Images/arts/images (12).jpg"
     }
+   
 ]

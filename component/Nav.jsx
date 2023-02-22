@@ -38,6 +38,9 @@ const Nav = ({ setFont, font }) => {
                               <Link href='/contact'>
                                     <li style={location.pathname === '/contact' ? navActive : navColor}>{t("nav.contact")}</li>
                               </Link>
+                              <Link href='/gallery'>
+                                    <li style={location.pathname === '/gallery' ? navActive : navColor}>{t("nav.gallery")}</li>
+                              </Link>
                               <CategoryDropDown setFont={setFont} font={font} />
                              
 

@@ -24,7 +24,7 @@ const CategoryDropDown = ({ setFont, font }) => {
       return (
             <div className={styles.NavDropDown_container}>
                   <div className={styles.NavDropDown_select}>
-                        <li className=''>Category</li>
+                        <li className=''>{t("nav.category")}</li>
                         {/* <span style={{fontSize:'1rem'}}>{t("global.link")}</span> */}
                         <span><BiChevronDown /></span>
                   </div>
