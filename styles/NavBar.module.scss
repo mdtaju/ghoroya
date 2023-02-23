@@ -5,18 +5,18 @@
   height: auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  box-shadow: 0 1px 4px rgb(0 0 0 / 6%);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   z-index: 999;
   background-color: #fff;
- 
 }
+
 .navbar {
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // padding: 7px 0px;
 }
+
 .navbar ul {
   padding: 0;
   margin: 0;
@@ -24,24 +24,25 @@
   align-items: center;
   list-style: none;
   gap: 24px;
-  li {
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 5px;
-    cursor: pointer;
-    color: #000;
-    transition: color ease 0.2s;
-    &:hover {
-      color: var(--primaryOrange) !important;
-    }
-  }
 }
-// Nav Cart component
+.navbar ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px;
+  cursor: pointer;
+  color: #000;
+  transition: color ease 0.2s;
+}
+.navbar ul li:hover {
+  color: var(--primaryOrange) !important;
+}
+
 .nav_cart_container {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 .cart {
   font-size: 1.2rem;
   background-color: white;
@@ -51,40 +52,44 @@
   cursor: pointer;
 }
 
-// mobile nav
 .mobileNav_container {
   background-color: var(--primaryOrange);
   padding: 10px 0px;
-  // margin-bottom: 20px;
-  box-shadow: -1px 15px 26px -4px rgb(161 151 151 / 15%);
+  box-shadow: -1px 15px 26px -4px rgba(161, 151, 151, 0.15);
   position: fixed;
   top: 0;
   width: 100%;
   height: auto;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   z-index: 999;
 }
+
 .mobileNav_inner_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  img {
-    border-radius: 10px;
-  }
 }
+.mobileNav_inner_container img {
+  border-radius: 10px;
+}
+
 .mobileNav_icon {
   font-size: 2rem;
   color: var(--primaryGreen);
 }
+
 .mobileNav_close_icon {
   font-size: 2rem;
   color: red;
 }
+
 .mobileNav_menu_item_icon {
   font-size: 1.5rem;
   line-height: 10px;
   color: gray;
 }
+
 .mobileNav_lan_area {
   display: flex;
   align-items: center;
@@ -93,43 +98,51 @@
   padding-bottom: 7px;
   color: gray;
 }
+
 .mobileNav_lan_icon {
   font-size: 1.5rem;
 }
+
 .mobileNav_lan_area_lan {
   padding: 7px 0px 7px 72px;
   color: gray;
   font-size: 1rem;
 }
+.mobileNav_lan_area_lan_foods {
+  padding: 7px 0px 7px ;
+  color: gray;
+  font-size: 1rem;
+}
 
-// Nav Drop Down
 .NavDropDown_container {
   position: relative;
   padding: 5px 0px;
-  &:hover {
-    .NavDropDown_list {
-      visibility: visible;
-      transform: translateY(10px);
-    }
-  }
+  
 }
+.NavDropDown_container:hover .NavDropDown_list {
+  visibility: visible;
+  transform: translateY(10px);
+}
+
 .NavDropDown_select {
   display: flex;
   align-items: center;
   gap: 7px;
   cursor: pointer;
-  span {
-    font-size: 1.2rem;
-  }
 }
+.NavDropDown_select span {
+  font-size: 1.2rem;
+}
+
 .NavDropDown_list {
+  min-width: 260px;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px !important;
   position: absolute;
   top: 30px;
-  right: 0;
+  left: 0px;
   background-color: #fff;
   padding: 30px 25px 15px 25px !important;
   margin: 0;
@@ -137,12 +150,12 @@
   align-items: flex-start !important;
   visibility: hidden;
   transition: transform ease 0.3s;
-  li {
-    cursor: pointer;
-    transform: translateX(0px);
-    transition: transform ease 0.3s !important;
-    &:hover {
-      transform: translateX(5px);
-    }
-  }
 }
+.NavDropDown_list li {
+  cursor: pointer;
+  transform: translateX(0px);
+  transition: transform ease 0.3s !important;
+}
+.NavDropDown_list li:hover {
+  transform: translateX(5px);
+}/*# sourceMappingURL=NavBar.module.css.map */

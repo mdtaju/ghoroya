@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Illustration from '../public/Images/subscribe.png';
-import styles from '../styles/Subscribe/Subscribe.module.css';
+import styles from '../styles/Subscribe.module.scss';
 
 const Subscribe = () => {
       return (

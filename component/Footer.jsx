@@ -11,7 +11,7 @@ import { RiInstagramLine, RiWhatsappFill } from 'react-icons/ri';
 import { TbLicense } from 'react-icons/tb';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
 import GooglePlay from '../public/Images/google-play-store.png';
-import styles from '../styles/Footer/Footer.module.css';
+import styles from '../styles/Footer.module.scss';
 import PaySponsor from './PaySponsor';
 import PDFViewer from './PDFViewer';
 

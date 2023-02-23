@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import styles from '../styles/Gallery/Gallery.module.css';
+import styles from '../styles/Gallery.module.scss';
 
 const GalleryChild = ({ Img }) => {
 

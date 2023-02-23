@@ -1,6 +1,7 @@
 .homeAppScreen_screen_container {
   float: right;
 }
+
 @media (max-width: 768px) {
   .homeAppScreen_screen_container {
     width: 100%;
@@ -13,11 +14,12 @@
   align-items: center;
   gap: 20px;
   margin-bottom: 50px;
-  h3 {
-    margin-bottom: 0;
-    color: var(--primaryOrange);
-  }
 }
+.homeAppScreen_text_container h3 {
+  margin-bottom: 0;
+  color: var(--primaryOrange);
+}
+
 .homeAppScreen_spoon_icon {
   font-size: 1.5rem;
   padding: 15px;
@@ -25,9 +27,8 @@
   border: 1px solid var(--primaryGreen);
   border-radius: 10px;
 }
-.homeAppScreen_text_main_container {
-  h1,
-  p {
-    margin-bottom: 30px;
-  }
-}
+
+.homeAppScreen_text_main_container h1,
+.homeAppScreen_text_main_container p {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=HomeAppScreen.module.css.map */

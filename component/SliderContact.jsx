@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { HiLocationMarker, HiMail, HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { MdPermPhoneMsg } from 'react-icons/md';
 import ImgRes from '../public/Images/contacts-1.png';
-import styles from '../styles/Slider/Slider.module.css';
+import styles from '../styles/Slider.module.scss';
 
 const SliderAbout = () => {
       const {t} = useTranslation();

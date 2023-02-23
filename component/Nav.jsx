@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Logo from '../public/Images/ghoroya_logo.jpg';
-import styles from '../styles/NavBar/NavBar.module.css';
+import styles from '../styles/NavBar.module.scss';
 import CategoryDropDown from './CategoryDropDown';
 import NavDropDown from './NavDropDown';
 

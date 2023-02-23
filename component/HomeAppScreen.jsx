@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ImSpoonKnife } from 'react-icons/im';
 import ImgGoogle from '../public/Images/google-play-store.png';
 import Img from '../public/Images/home-app-slider.jpeg';
-import styles from '../styles/HomeAppScreen/HomeAppScreen.module.css';
+import styles from '../styles/HomeAppScreen.module.scss';
 
 const HomeAppScreen = () => {
       const {t} = useTranslation();

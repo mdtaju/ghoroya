@@ -3,7 +3,7 @@
 //   reactStrictMode: true,
 //   swcMinify: true,
 // }
-
+const path = require('path')
 // module.exports = nextConfig
 module.exports = {
   webpack: (config) =>
@@ -14,5 +14,8 @@ module.exports = {
       })
 
       return config
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
   },
 }

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Sponsor from '../public/Images/SSLCOMMERZ.png';
-import styles from '../styles/Footer/Footer.module.css';
+import styles from '../styles/Footer.module.scss';
 
 const PaySponsor = () => {
       return (

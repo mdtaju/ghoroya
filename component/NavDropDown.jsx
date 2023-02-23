@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BiChevronDown } from 'react-icons/bi';
 import { TbWorld } from 'react-icons/tb';
-import styles from '../styles/NavBar/NavBar.module.css';
+import styles from '../styles/NavBar.module.scss';
 
 const NavDropDown = ({setFont, font}) => {
       const {t, i18n} = useTranslation();

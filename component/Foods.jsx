@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import Food from './Food';
 import { useTranslation } from 'react-i18next';
-import styles from '../styles/Slider/Slider.module.css';
+import styles from '../styles/Slider.module.scss';
 
 const Foods = () => {
     const { t } = useTranslation();

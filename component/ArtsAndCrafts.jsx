@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import ArtsAndCraft from './ArtsAndCraft';
-import styles from '../styles/Slider/Slider.module.css';
+import styles from '../styles/Slider.module.scss';
 import Food from './Food';
 
 const ArtsAndCrafts = () => {

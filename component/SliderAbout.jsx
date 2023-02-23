@@ -4,7 +4,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import ImgRes from '../public/Images/WhatsApp.jpeg';
-import styles from '../styles/Slider/Slider.module.css';
+import styles from '../styles/Slider.module.scss';
 
 const SliderAbout = () => {
       const {t} = useTranslation();

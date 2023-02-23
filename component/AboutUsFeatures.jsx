@@ -8,7 +8,7 @@ import Icon5 from '../public/Images/about-us-icons/service-icon-5.svg';
 // import Icon6 from '../public/Images/about-us-icons/service-icon-6.svg';
 import Icon7 from '../public/Images/about-us-icons/service-icon-7.svg';
 // import Icon8 from '../public/Images/about-us-icons/service-icon-8.svg';
-import styles from '../styles/AboutUsFeatures/AboutUsFeatures.module.css';
+import styles from '../styles/AboutUsFeatures.module.scss';
 
 const AboutUsFeatures = () => {
       return (

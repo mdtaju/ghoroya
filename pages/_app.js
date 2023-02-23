@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import '../component/i18next';
 import Messenger from "../component/Messenger";
 import Logo from '../public/Images/ghoroya_logo.jpg';
-import '../styles/globals.css';
+import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

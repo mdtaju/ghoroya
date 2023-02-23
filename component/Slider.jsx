@@ -6,7 +6,7 @@ import { BiUserCheck } from 'react-icons/bi';
 import { MdDirectionsBike, MdOndemandVideo } from 'react-icons/md';
 import ReactPlayer from 'react-player';
 import ImgScr from '../public/Images/app-srcs.png';
-import styles from '../styles/Slider/Slider.module.css';
+import styles from '../styles/Slider.module.scss';
 
 const Slider = () => {
       const [open, setOpen] = useState(false);

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-import styles from '../styles/Slider/Slider.module.css';
+import styles from '../styles/Slider.module.scss';
 import { useTranslation } from 'next-i18next';
 
 

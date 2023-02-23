@@ -1,0 +1,34 @@
+.HowItWork_card {
+  padding: 20px;
+}
+
+.HowItWork_heading {
+  text-align: center;
+}
+.HowItWork_heading h1 {
+  font-weight: bold;
+}
+.HowItWork_heading p {
+  padding-top: 30px;
+  width: 66%;
+  margin: auto;
+}
+
+@media (max-width: 1400px) {
+  .HowItWork_heading p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.HowItWork_card {
+  text-align: center;
+  padding-top: 50px;
+}
+.HowItWork_card h4 {
+  font-weight: bold;
+  padding-top: 20px;
+}
+.HowItWork_card h4 span {
+  font-size: 2rem;
+  color: #787878;
+}/*# sourceMappingURL=HowItWorks.module.css.map */

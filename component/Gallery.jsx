@@ -25,7 +25,7 @@ import Img22 from '../public/Images/gallery/celebrate21.jpg';
 import Img23 from '../public/Images/gallery/celebrate22.jpg';
 import Img24 from '../public/Images/gallery/celebrate23.jpg';
 
-import styles from '../styles/Gallery/Gallery.module.css';
+import styles from '../styles/Gallery.module.scss';
 import GalleryChild from './GalleryChild';
 
 const GalleryComponent = () => {

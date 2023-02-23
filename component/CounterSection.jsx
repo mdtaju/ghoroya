@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from '../styles/CounterSection/CounterSection.module.css';
+import styles from '../styles/CounterSection.module.scss';
 const CounterSection = () => {
       const {t} = useTranslation();
       return (

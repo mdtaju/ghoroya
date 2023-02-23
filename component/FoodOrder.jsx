@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Img from '../public/Images/photo-3.png';
-import styles from '../styles/FoodOrder/FoodOrder.module.css';
+import styles from '../styles/FoodOrder.module.scss';
 
 const FoodOrder = () => {
       const {t} = useTranslation();

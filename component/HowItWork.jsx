@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Illustration1 from '../public/Images/how-it-work/illustration-1.png';
 import Illustration2 from '../public/Images/how-it-work/illustration-2.png';
 import Illustration3 from '../public/Images/how-it-work/illustration-3.png';
-import styles from '../styles/HowItWorks/HowItWorks.module.css';
+import styles from '../styles/HowItWorks.module.scss';
 const HowItWork = () => {
       const {t} = useTranslation();
       return (

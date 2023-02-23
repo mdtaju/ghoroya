@@ -20,7 +20,7 @@ import { ImMenu } from 'react-icons/im';
 import { RiContactsFill, RiGalleryFill } from 'react-icons/ri';
 import { TbWorld } from 'react-icons/tb';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
-import styles from '../styles/NavBar/NavBar.module.css';
+import styles from '../styles/NavBar.module.scss';
 
 // import ExpandLess from "@mui/icons-material/ExpandLess";
 // import ExpandMore from "@mui/icons-material/ExpandMore";

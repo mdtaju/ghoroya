@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Slider/Slider.module.css';
+import styles from '../styles/Slider.module.scss';
 
 const SliderSelect = () => {
       return (
