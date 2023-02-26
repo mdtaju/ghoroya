@@ -50,6 +50,12 @@ const Footer = () => {
                                                 <Link href={'/contact'}>
                                                       <li>{t("footer.secTwo.menuThree")} <span className={styles.footer_menu_icon}><BsArrowRight /></span></li>
                                                 </Link>
+                                                <Link href={'/gallery'}>
+                                                      <li>{t("footer.secTwo.menuFour")} <span className={styles.footer_menu_icon}><BsArrowRight /></span></li>
+                                                </Link>
+                                                <Link href={'/jobs'}>
+                                                      <li>{t("footer.secTwo.menuFive")} <span className={styles.footer_menu_icon}><BsArrowRight /></span></li>
+                                                </Link>
                                           </ul>
                                     </div>
                               </div>

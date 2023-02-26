@@ -17,10 +17,12 @@ import { AiFillCloseCircle, AiFillHome } from 'react-icons/ai';
 import { BiCategory, BiChevronDown } from 'react-icons/bi';
 import { BsInfoSquareFill } from 'react-icons/bs';
 import { ImMenu } from 'react-icons/im';
+import { MdWork } from 'react-icons/md';
 import { RiContactsFill, RiGalleryFill } from 'react-icons/ri';
 import { TbWorld } from 'react-icons/tb';
 import Logo from '../public/Images/ghoroya_merchant.jpg';
 import styles from '../styles/NavBar.module.scss';
+
 
 // import ExpandLess from "@mui/icons-material/ExpandLess";
 // import ExpandMore from "@mui/icons-material/ExpandMore";
@@ -123,6 +125,19 @@ export default function MobileNav({ font, setFont }) {
                                     </ListItemButton>
                               </ListItem>
                         </Link>
+                        <Link href={'/jobs'}>
+                              <ListItem disablePadding style={location.pathname === '/jobs' ? navActive : navColor}>
+                                    <ListItemButton>
+                                          <ListItemIcon>
+                                                <span
+                                                      style={location.pathname === '/jobs' ? navActive : navColor}
+                                                      className={styles.mobileNav_menu_item_icon}
+                                                ><MdWork /></span>
+                                          </ListItemIcon>
+                                          <ListItemText primary={t("nav.jobs")} />
+                                    </ListItemButton>
+                              </ListItem>
+                        </Link>
 
                         <Divider />
                   </List>
@@ -176,8 +191,8 @@ export default function MobileNav({ font, setFont }) {
                                                       </ListItem>
                                                 </Link>
                                                 <Divider />
-                                                <Link href={'/category'} className={styles.mobileNav_lan_area_lan}>
-                                                      <ListItem disablePadding style={location.pathname === '/category' ? navActive : navColor}>
+                                                <Link href={'/experts'} className={styles.mobileNav_lan_area_lan}>
+                                                      <ListItem disablePadding style={location.pathname === '/experts' ? navActive : navColor}>
                                                             <ListItemButton>
                                                                   <ListItemIcon>
 

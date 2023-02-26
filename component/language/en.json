@@ -11,6 +11,7 @@
     "about": "About Us",
     "contact": "Contact",
     "gallery": "Gallery",
+    "jobs": "Jobs",
     "category": "Category",
     "foods":"Foods",
     "artsandcrafts":"Arts and Crafts",
@@ -18,9 +19,12 @@
   },
   "slider": {
     "title": "Number One Platform for Ghoroya Foods, Arts & Crafts and Experts",
+    "jobtitle":"Discover endless job opportunities on the Number One Platform for professionals",
     "subtitle": "Ghoroya Foods, Arts & Crafts and Experts are available through a single app. Ghoroya app enables small and medium entrepreneurs to sell and buy their products from home through a app.",
     "btnRider": "Join as Rider",
-    "btnExpert": "Join as Merchant"
+    "btnMerchant": "Join as Merchant",
+    "btnCustomer": "Join as Customer",
+    "btnExpert": "Join as Expert"
   },
   "howItWork": {
     "secOne": {
@@ -81,7 +85,9 @@
       "menu": "Menu",
       "menuOne": "Home",
       "menuTwo": "About Us",
-      "menuThree": "Contact"
+      "menuThree": "Contact",
+      "menuFour": "Gallery",
+      "menuFive": "Jobs"
     },
     "secThree": {
       "title": "Contract",

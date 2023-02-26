@@ -41,6 +41,9 @@ const Nav = ({ setFont, font }) => {
                               <Link href='/gallery'>
                                     <li style={location.pathname === '/gallery' ? navActive : navColor}>{t("nav.gallery")}</li>
                               </Link>
+                              <Link href='/jobs'>
+                                    <li style={location.pathname === '/jobs' ? navActive : navColor}>{t("nav.jobs")}</li>
+                              </Link>
                               <CategoryDropDown setFont={setFont} font={font} />
                              
 
