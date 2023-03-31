@@ -24,17 +24,20 @@
   align-items: center;
   list-style: none;
   gap: 24px;
-  
 }
+
 .navbar ul li {
-  font-size: 1rem;
+  font-size: larger;
   font-weight: 500;
   padding: 5px;
   cursor: pointer;
   color: #000;
   transition: color ease 0.2s;
-  font-size:larger;
+  
 }
+
+// font-size: larger;
+
 .navbar ul li:hover {
   color: var(--primaryOrange) !important;
 }
@@ -72,6 +75,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .mobileNav_inner_container img {
   border-radius: 10px;
 }
@@ -110,6 +114,7 @@
   color: gray;
   font-size: 1rem;
 }
+
 .mobileNav_lan_area_lan_foods {
   padding: 7px 0px 7px ;
   color: gray;
@@ -133,6 +138,7 @@
   cursor: pointer;
   
 }
+
 .NavDropDown_select span {
   font-size: 1.2rem;
 }
@@ -154,11 +160,13 @@
   visibility: hidden;
   transition: transform ease 0.3s;
 }
+
 .NavDropDown_list li {
   cursor: pointer;
   transform: translateX(0px);
   transition: transform ease 0.3s !important;
 }
+
 .NavDropDown_list li:hover {
   transform: translateX(5px);
 }/*# sourceMappingURL=NavBar.module.css.map */

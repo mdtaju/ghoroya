@@ -23,7 +23,7 @@ const Nav = ({ setFont, font }) => {
       return (
             <nav className={`${styles.navbar_main_container}`}>
                   <div className={`container ${styles.navbar}`}>
-                        <ul>
+                        <ul className=''>
                               <li>
                                     <Link href={"/"}>
                                           <Image src={Logo} alt='ghoroya, logo' width={60} height={60} />

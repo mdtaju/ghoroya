@@ -36,10 +36,10 @@ const Jobs = () => {
                                       <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.merchant" rel="noopener noreferrer">
                                             <button style={{ marginLeft: '7px' }} className={`button button_3`}><BiUserCheck style={{ fontSize: "22px" }} /> {t("slider.btnExpert")}</button>
                                       </a>
-                                      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.rider" rel="noopener noreferrer">
+                                      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user&pli=1" rel="noopener noreferrer">
                                             <button style={{ marginLeft: '7px' }} className={`button button_2`}><MdDirectionsBike style={{ fontSize: "22px" }} /> {t("slider.btnCustomer")}</button>
                                       </a>
-                                      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.user&pli=1" rel="noopener noreferrer">
+                                      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ghoroya.merchant" rel="noopener noreferrer">
                                             <button style={{ marginLeft: '7px', marginTop:"5px" }} className={`button button_3`}><BiUserCheck style={{ fontSize: "22px" }} /> {t("slider.btnMerchant")}</button>
                                       </a>
                                 </div>
